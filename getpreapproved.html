@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Pre-Approved - United Automotive Consultants</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="logo" onclick="window.location.href='index.html'" style="cursor:pointer;">
+    <img src="logo1.jpg" alt="United Automotive Consultants Logo">
+  </div>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="services.html">Services</a>
+    <a href="getpreapproved.html">Get Pre-Approved</a>
+    <a href="insurance.html">Insurance</a>
+    <a href="contactus.html">Contact Us</a>
+  </nav>
+
+  <div class="nav-actions">
+    <!-- TOGGLE SWITCH -->
+    <label class="switch">
+      <input type="checkbox" id="langToggle">
+      <span class="slider"></span>
+    </label>
+    <span id="langLabel">English</span>
+    
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </div>
+</header>
+
+
+<!-- HERO TITLE -->
+<section class="page-header">
+  <h1>Get Pre-Approved</h1>
+  <p>Secure financing for your next vehicle in minutes.</p>
+</section>
+
+<!-- APPLICATION SECTION -->
+<section class="application-section">
+
+  <form id="creditForm">
+
+    <div class="application-grid">
+
+      <!-- PRIMARY APPLICANT -->
+      <div class="app-box">
+        <h2>Primary Applicant</h2>
+
+        <!-- GENERAL INFO -->
+        <h3>General Information</h3>
+
+        <div class="form-row">
+          <input type="text" placeholder="First Name *" required>
+          <input type="text" placeholder="Middle Name">
+          <input type="text" placeholder="Last Name *" required>
+        </div>
+
+        <input type="date" required>
+        <input type="tel" placeholder="Cell Phone *" required>
+        <input type="email" placeholder="Email *" required>
+
+        <input type="text" placeholder="Address *" required>
+
+        <div class="form-row">
+          <input type="text" placeholder="City *" required>
+          <input type="text" placeholder="State *" required>
+          <input type="text" placeholder="ZIP Code *" required>
+        </div>
+
+        <!-- HOW LONG -->
+        <div class="form-row">
+          <input type="number" id="yearsPrimary" placeholder="Years *" required>
+          <input type="number" placeholder="Months *" required>
+        </div>
+
+        <input type="text" id="prevAddressPrimary" placeholder="Previous Address" style="display:none;">
+
+        <input type="text" placeholder="Driver's License *" required>
+        <input type="text" placeholder="Social Security *" required>
+
+        <!-- RESIDENTIAL -->
+        <h3>Residential Status</h3>
+
+        <div class="radio-group">
+          <label><input type="radio" name="resPrimary"> Own</label>
+          <label><input type="radio" name="resPrimary"> Rent</label>
+          <label><input type="radio" name="resPrimary"> Parents</label>
+        </div>
+
+        <input type="text" placeholder="Monthly Rent/Mortgage *" required>
+
+        <!-- EMPLOYMENT -->
+        <h3>Employment</h3>
+
+        <input type="text" placeholder="Employer Name *" required>
+        <input type="text" placeholder="Occupation *" required>
+        <input type="tel" placeholder="Employer Phone *" required>
+        <input type="text" placeholder="Gross Monthly Income *" required>
+
+        <div class="form-row">
+          <input type="number" id="empYearsPrimary" placeholder="Years *" required>
+          <input type="number" placeholder="Months *" required>
+        </div>
+
+        <input type="text" id="prevEmployerPrimary" placeholder="Previous Employer" style="display:none;">
+
+      </div>
+
+      <!-- CO APPLICANT -->
+      <div class="app-box">
+        <h2>Co-Applicant</h2>
+
+        <!-- SAME STRUCTURE -->
+        <h3>General Information</h3>
+
+        <div class="form-row">
+          <input type="text" placeholder="First Name">
+          <input type="text" placeholder="Middle Name">
+          <input type="text" placeholder="Last Name">
+        </div>
+
+        <input type="date">
+        <input type="tel" placeholder="Cell Phone">
+        <input type="email" placeholder="Email">
+
+        <input type="text" placeholder="Address">
+
+        <div class="form-row">
+          <input type="text" placeholder="City">
+          <input type="text" placeholder="State">
+          <input type="text" placeholder="ZIP">
+        </div>
+
+        <div class="form-row">
+          <input type="number" id="yearsCo" placeholder="Years">
+          <input type="number" placeholder="Months">
+        </div>
+
+        <input type="text" id="prevAddressCo" placeholder="Previous Address" style="display:none;">
+
+        <input type="text" placeholder="Driver's License">
+        <input type="text" placeholder="SSN">
+
+        <h3>Residential Status</h3>
+
+        <div class="radio-group">
+          <label><input type="radio" name="resCo"> Own</label>
+          <label><input type="radio" name="resCo"> Rent</label>
+          <label><input type="radio" name="resCo"> Parents</label>
+        </div>
+
+        <input type="text" placeholder="Monthly Rent/Mortgage">
+
+        <h3>Employment</h3>
+
+        <input type="text" placeholder="Employer Name">
+        <input type="text" placeholder="Occupation">
+        <input type="tel" placeholder="Employer Phone">
+        <input type="text" placeholder="Income">
+
+        <div class="form-row">
+          <input type="number" id="empYearsCo" placeholder="Years">
+          <input type="number" placeholder="Months">
+        </div>
+
+        <input type="text" id="prevEmployerCo" placeholder="Previous Employer" style="display:none;">
+
+      </div>
+
+    </div>
+
+    <!-- DISCLAIMER -->
+    <div class="disclaimer">
+      <p>
+        I hereby acknowledge, authorize and grant permission that the information contained in this credit application 
+        can and will be submitted on my behalf to financial institutions for the sole purpose of securing financing, 
+        and or credit, for the purchase/lease of a vehicle.
+      </p>
+    </div>
+
+    <!-- SUBMIT -->
+    <!-- <button class="submit-btn">Submit Application</button> -->
+    <button type="button" onclick="goToPayment()" class="submit-btn">
+        Submit & Continue to Payment
+    </button>
+
+  </form>
+
+</section>
+<!-- END APPLICATION SECTION -->
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- LEFT: BRAND -->
+    <div class="footer-col">
+      <p>© 2026 United Automotive Consultants.</p>
+      <p>All rights reserved.</p>
+      <p><strong>Crafted by Kermit Webcraft.</strong></p>
+    </div>
+
+    <!-- BUSINESS HOURS -->
+    <div class="footer-col">
+      <h4>Business Hours</h4>
+      <p>Mon - Fri: 9am - 8pm</p>
+      <p>Sat: 9am - 8pm</p>
+      <p>Sun: 9am - 8pm</p>
+    </div>
+
+    <!-- CONTACT INFO -->
+    <div class="footer-col">
+      <h4>Contact</h4>
+
+      <p><i class="bi bi-telephone"></i> (732) 685-2948</p>
+      <p><i class="bi bi-envelope"></i> jose@unitedautomotive.com</p>
+      <p><i class="bi bi-geo-alt"></i> NJ, NY, & PA</p>
+
+      <!--
+      <div class="socials">
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-twitter"></i>
+      </div>
+      -->
+    </div>
+
+    <!-- LEGAL LINKS -->
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <p><a href="#">Privacy Policy</a></p>
+      <p><a href="#">Terms of Service</a></p>
+      <p><a href="#">Accessibility Statement</a></p>
+    </div>
+
+  </div>
+</footer>
+    
+</body>
+</html>

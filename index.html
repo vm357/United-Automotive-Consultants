@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>United Automotive Consultants</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="logo" onclick="window.location.href='index.html'" style="cursor:pointer;">
+  <img src="logo1.jpg" alt="United Automotive Consultants Logo">
+</div>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="services.html">Services</a>
+    <a href="getpreapproved.html">Get Pre-Approved</a>
+    <a href="insurance.html">Insurance</a>
+    <a href="contactus.html">Contact Us</a>
+  </nav>
+
+  <div class="nav-actions">
+    <!-- TOGGLE SWITCH -->
+    <label class="switch">
+      <input type="checkbox" id="langToggle">
+      <span class="slider"></span>
+    </label>
+    <span id="langLabel">English</span>
+  
+    
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <video autoplay muted loop class="hero-video">
+    <source src="car-video.mp4" type="video/mp4">
+  </video>
+
+  <div class="overlay"></div>
+
+  <div class="hero-container">
+
+  <!-- RIGHT: FORM -->
+    <div class="form-box">
+      <h2 id="formTitle">Find Your Perfect Ride</h2>
+
+      <form action="https://formspree.io/f/YOUR_ID" method="POST">
+        <div class =input-group>
+          <div class="name-row">
+            <input type="text" name="firstName" placeholder="First Name" required>
+            <input type="text" name="lastName" placeholder="Last Name" required>
+          </div>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="text" name="car" placeholder="What car are you looking for?" required>
+        </div>
+        <!-- OPTIONS -->
+        <div class="options">
+          <label>
+            <input type="radio" name="service" value="Auto" required>
+            <span></span>
+            Just Auto
+          </label>
+
+          <label>
+            <input type="radio" name="service" value="Insurance">
+            <span></span>
+            Just Insurance
+          </label>
+
+          <label>
+            <input type="radio" name="service" value="Both">
+            <span></span>
+            Auto + Insurance
+          </label>
+        </div>
+
+        <button type="submit">Get Started Today</button>
+      </form>
+    </div> 
+  <!-- END LEFT FORM --> 
+
+  <!-- LEFT: TEXT -->
+    <div class="hero-text">
+      <h1 id="heroTitle" class="gradient-text">United Automotive Consultants</h1>
+      <br> <br> <br>
+      <h2 id="heroTitle">NJ's Best All-in-One</h2>
+      <h3 id="heroSubtitle">Car and Insurance Broker</h3>
+
+      <p id="heroLine1">
+        We shop dozens of dealers & insurers so you don't have to.
+      </p>
+
+      <p id="heroLine2">
+        No hidden fees. No dealership games. No hassle.
+      </p>
+
+      <a href="tel:+17326852948" class="call-button">
+        <img src="callusnow.png" alt="Call us now" style="cursor:pointer;">
+      </a>
+    </div>
+
+  </div>
+</section>
+<!-- END HERO SECTION -->
+
+<!-- ABOUT US SECTION -->
+<section class="about fade-up">
+  <div class="section-container">
+
+    <div class="text">
+      <h2>About Us</h2>
+      <p>
+        United Automotive Consultants is a <strong>trusted</strong> auto broker proudly serving drivers throughout New Jersey.
+      </p>
+      <br>
+
+      <p>
+        Founded by a former dealership manager with over 10 years of hands-on experience, 
+        we understand exactly how <strong>frustrating</strong> and <strong>time-consuming</strong> the car-buying process can be especially when you're negotiating on your own.
+      </p>
+      <br>
+
+      <p>
+        That's why we built a better way: <strong>one dedicated broker</strong> who handles everything for you from start to finish.
+      </p>
+      <br>
+
+      <p>
+        We specialize in securing the <strong>best purchase price</strong> on the vehicle you want, 
+        while shopping top insurance carriers for the lowest possible rates. 
+        We work with <strong>every credit situation</strong>, making the process smooth and stress-free.
+      </p>
+      <br>
+
+      <p>
+        You'll work directly with one experienced broker who negotiates for you. 
+        Never for the dealership or insurer. No hidden fees. No pressure. 
+        Just transparent, reliable service from start to finish.
+      </p> 
+      <br>   
+
+    </div>
+
+    <div class="image">
+      <img src="car1.png" alt="Car">
+    </div>
+
+  </div>
+</section>
+<!-- END ABOUT US SECTION -->
+
+<!-- WHY US SECTION -->
+<section class="why-us fade-up">
+  <div class="section-container reverse">
+
+    <div class="text">
+      <h2>Why Us</h2>
+      <p>
+        <strong>Dedicated Broker, Two Major Savings</strong> We handle both your car purchase and auto insurance under one roof — 
+        saving you time and delivering better deals than shopping separately.
+      </p>
+      <br>
+
+      <p>
+        <strong>Expert Negotiation on Your Behalf</strong> Our founder, a former dealership manager with over 10 years of experience, 
+        knows exactly how to negotiate the best price so you don't have to waste hours (or overpay).
+      </p>
+      <br>  
+      
+      <p>
+        <strong>Works With All Credit Types</strong> Good credit, bad credit, or even no credit — no problem. 
+        We provide guaranteed approval options tailored to your situation.
+      </p>
+      <br>
+
+      <p>  
+        <strong>No Hidden Fees • No Pressure • No Dealership Games</strong> We work exclusively for you — never for the dealer or insurance company.
+      </p>
+      <br>
+      
+      <p>  
+        <strong>True Convenience</strong> From start to finish, everything is handled for you. 
+        You simply choose the car you love and we deliver it right to your doorstep with the best price and coverage already in place.
+      </p>
+      <br>
+
+    </div>
+
+    <div class="image">
+      <img src="car2.png" alt="Car">
+    </div>
+
+  </div>
+</section>
+<!-- END WHY US SECTION -->
+ 
+<!-- OUR PROCESS SECTION -->
+<section class="process fade-up">
+  <h2>Our Process</h2>
+
+  <div class="process-steps">
+
+    <div class="step">
+      <i class="bi bi-car-front"></i>
+      <h3>Pick a Car</h3>
+      <p>We can source any car you dream of.</p>
+    </div>
+
+    <div class="step">
+      <i class="bi bi-credit-card"></i>
+      <h3>Get Pre-Qualified</h3>
+      <p>Quick and easy approval process.</p>
+    </div>
+
+    <div class="step">
+      <i class="bi bi-check-circle"></i>
+      <h3>Drive Off</h3>
+      <p>Delivered to your doorstep with coverage.</p>
+    </div>
+
+  </div>
+</section>
+<!-- END OF OUR PROCESS SECTION -->
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- LEFT: BRAND -->
+    <div class="footer-col">
+      <p>© 2026 United Automotive Consultants.</p>
+      <p>All rights reserved.</p>
+      <p><strong>Crafted by Kermit Webcraft.</strong></p>
+    </div>
+
+    <!-- BUSINESS HOURS -->
+    <div class="footer-col">
+      <h4>Business Hours</h4>
+      <p>Mon - Fri: 9am - 8pm</p>
+      <p>Sat: 9am - 8pm</p>
+      <p>Sun: 9am - 8pm</p>
+    </div>
+
+    <!-- CONTACT INFO -->
+    <div class="footer-col">
+      <h4>Contact</h4>
+
+      <p><i class="bi bi-telephone"></i> (732) 685-2948</p>
+      <p><i class="bi bi-envelope"></i> jose@unitedautomotive.com</p>
+      <p><i class="bi bi-geo-alt"></i> NJ, NY, & PA</p>
+
+      <!--
+      <div class="socials">
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-twitter"></i>
+      </div>
+      -->
+    </div>
+
+    <!-- LEGAL LINKS -->
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <p><a href="#">Privacy Policy</a></p>
+      <p><a href="#">Terms of Service</a></p>
+      <p><a href="#">Accessibility Statement</a></p>
+    </div>
+
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
