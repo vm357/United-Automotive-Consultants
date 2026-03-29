@@ -121,23 +121,33 @@
         "subtitle": "Simple. Transparente. Diseñado para ahorrarte tiempo y dinero.",
 
         "leasing": {
-    "title": "Leasing",
-    "desc": "Hacemos que el leasing sea simple y accesible al aprovechar los mejores incentivos de fabricantes y programas exclusivos, logrando los pagos mensuales más bajos posibles."
+    "title": "Arrendamiento de Autos",
+    "desc": "Hacemos que el alquiler de un auto sea sencillo y asequible aprovechando los mejores descuentos de los fabricantes y los programas de alquiler exclusivos disponibles, lo que nos permite ofrecer las cuotas mensuales más bajas posibles."
   },
 
   "financing": {
     "title": "Financiamiento de Autos",
-    "desc": "Facilitamos el financiamiento gracias a nuestras sólidas alianzas con prestamistas líderes, lo que nos permite ofrecer tasas exclusivas y mejores condiciones que la mayoría de los clientes nunca ve."
+    "desc": "Hacemos que la financiación sea sencilla y asequible gracias a nuestras sólidas alianzas con las principales entidades crediticias, lo que nos permite acceder a tasas exclusivas y mejores condiciones que la mayoría de los clientes nunca llega a conocer."
   },
 
   "delivery": {
     "title": "Entrega",
-    "desc": "Entregamos tu vehículo directamente en tu puerta para que nunca tengas que pisar un concesionario ni lidiar con ventas agresivas."
+    "desc": "Te entregamos tu auto nuevo directamente a tu casa, para que nunca tengas que pisar un concesionario ni lidiar con tácticas de venta agresivas."
   },
 
   "insurance": {
-    "title": "Seguro de Auto",
-    "desc": "Comparamos las principales aseguradoras para encontrar las tarifas más bajas posibles, asegurando al mismo tiempo la cobertura adecuada para tus necesidades."
+    "title": "Seguro de Autos",
+    "desc": "Comparamos las mejores compañías de seguros para encontrarte las tarifas más bajas posibles, asegurándonos al mismo tiempo de que tengas la cobertura adecuada para tus necesidades."
+  },
+
+  "usedcars": {
+    "title": "Autos Usados",
+    "desc": "Ahorra tiempo y dinero con nuestro servicio de intermediación de autos usados. Encontramos el vehículo exacto que buscas, negociamos el mejor precio y te guiamos a lo largo de un proceso de compra sencillo y transparente de principio a fin."
+  },
+
+  "tradein": {
+    "title": "Intercambios",
+    "desc": "Convierte tu vehículo actual en un ahorro inmediato para tu próximo auto. Ofrecemos valoraciones rápidas y justas para la permuta, basadas en datos reales del mercado: sin regateos ni sorpresas."
   }
 }
 

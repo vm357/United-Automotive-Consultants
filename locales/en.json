@@ -138,6 +138,17 @@
     "insurance": {
         "title": "Auto Insurance",
         "desc": "We shop top insurance carriers to find you the lowest possible rates while making sure you have the right coverage for your needs."
+    },
+
+    "usedcars": {
+        "title": "Used Cars",
+        "desc": "Save time and money with our used car brokerage. We locate the exact vehicle you want, negotiate the best price, and guide you through a smooth, transparent purchase from start to finish."
+    },
+
+    "tradein": {
+        "title": "Trade-Ins",
+        "desc": "Turn your current vehicle into instant savings on your next ride. We provide fast, fair trade-in valuations based on real market data- no haggling, no surprises."
     }
+    
    }
 }
