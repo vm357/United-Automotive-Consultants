@@ -478,7 +478,7 @@ input:checked + .slider:before {
 
 .about .section-container img {
   width: 100%;
-  margin-left: 40px;
+  margin-right: 60px;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.203);
 }
@@ -553,9 +553,9 @@ input:checked + .slider:before {
   font-size: 1.1rem;
 }
 
-.section-container img {
+.why-us .section-container img {
   width: 100%;
-  margin-left: -40px;
+  margin-left: 0px;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
