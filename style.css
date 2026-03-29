@@ -1193,7 +1193,7 @@ input {
 }
 
 contact-info a {
-  color: white;
+  color: rgb(0, 238, 255);
   text-decoration: none;
   transition: 0.3s;
 }
