@@ -32,6 +32,7 @@ body {
   z-index: 1000;
   transition: 0.3s ease;
   justify-content: space-between;
+
 }
 
 /* SOLID ON SCROLL */
@@ -1114,6 +1115,11 @@ input {
 
 /*---------- CONTACTUS.HTML ----------*/
 /* CONTACT PAGE */
+/* ONLY affects contact page */
+.contact-page .navbar {
+  background: rgba(0, 0, 0, 0.4);
+}
+
 .contact-hero {
   height: 100vh;
   position: relative;
@@ -1188,13 +1194,59 @@ input {
 
 /* MOBILE */
 @media (max-width: 768px) {
+  .contact-hero {
+    height: auto; /* KEY FIX */
+    padding: 120px 0 60px;
+  }
+
   .contact-container {
     flex-direction: column;
+    align-items: center;
+    gap: 30px; /* spacing between form + info */
+    padding: 0 20px;
+  }
+
+  .form-box {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+  }
+
+  .form-box h2 {
+    font-size: 1.6rem;
     text-align: center;
   }
 
   .contact-info {
-    margin-top: 30px;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 0;
+    text-align: left;
   }
+
+  .input-group input {
+    font-size: 14px;
+    padding: 10px;
+  };
+
+  .info-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .info-item i {
+    font-size: 22px;
+  }
+
+  .info-item h4 {
+    font-size: 16px;
+  }
+
+  .info-item p {
+    font-size: 13px;
+  }  
 }
+
 /*----------------- END OF CONTACTUS.HTML -----------------*/
