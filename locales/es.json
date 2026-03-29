@@ -16,13 +16,48 @@
   },
   "form": {
     "firstName": "Nombre",
+    "middleName": "Segundo nombre",
     "lastName": "Apellido",
     "phone": "Número de teléfono",
     "email": "Correo electrónico",
     "car": "¿Qué auto estás buscando?",
     "auto": "Solo Auto",
     "insurance": "Solo Seguro",
-    "both": "Auto + Seguro"
+    "both": "Auto + Seguro",
+
+    "address": "Dirección",
+    "city": "Ciudad",
+    "state": "Estado",
+    "zip": "Código postal",
+    "years": "Años",
+    "months": "Meses",
+    "license": "Licencia de conducir",
+    "ssn": "Seguro social",
+    "rentMortgage": "Renta/Hipoteca mensual",
+    "employer": "Nombre del empleador",
+    "occupation": "Ocupación",
+    "employerPhone": "Teléfono del empleador",
+    "income": "Ingreso mensual bruto",
+    "prevAddress": "Dirección anterior",
+    "prevEmployer": "Empleador anterior",
+
+    "own": "Propietario",
+    "rent": "Alquila",
+    "parents": "Con padres"
+  },
+
+  "pre": {
+    "header": "Precalifícate",
+    "subheader": "Obtén financiamiento para tu próximo vehículo en minutos.",
+    "primary": "Solicitante Principal",
+    "co": "Co-Solicitante",
+    "general": "Información General",
+    "residential": "Estado Residencial",
+    "employment": "Empleo",
+    "disclaimer": "Por la presente, reconozco, autorizo y doy mi consentimiento para que la información contenida en esta solicitud de crédito pueda ser y sea remitida en mi nombre a instituciones financieras con el único fin de obtener financiación o crédito para la compra o el arrendamiento de un vehículo.",
+    "submit": "Enviar y continuar al pago",
+    "signature": "Firma del solicitante"
+
   },
   "about": {
     "title": "Sobre Nosotros",

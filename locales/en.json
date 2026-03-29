@@ -16,14 +16,49 @@
   },
   "form": {
     "firstName": "First Name",
+    "middleName": "Middle Name",
     "lastName": "Last Name",
     "phone": "Phone Number",
     "email": "Email",
     "car": "What car are you looking for?",
     "auto": "Just Auto",
     "insurance": "Just Insurance",
-    "both": "Auto + Insurance"
+    "both": "Auto + Insurance",
+
+    "address": "Address",
+    "city": "City",
+    "state": "State",
+    "zip": "Zip Code",
+    "years": "Years",
+    "months": "Months",
+    "license": "Driver's License",
+    "ssn": "Social Security Number",
+    "rentMortgage": "Monthly Rent/Mortgage",
+    "employer": "Employer Name",
+    "occupation": "Occupation",
+    "employerPhone": "Employer Phone",
+    "income": "Gross Monthly Income",
+    "prevAddress": "Previous Address",
+    "prevEmployer": "Previous Employer",
+
+    "own": "Own",
+    "rent": "Rent",
+    "parents": "With Parents"
+
   },
+  "pre": {
+    "header": "Get Pre-Approved",
+    "subheader": "Secure financing for your next vehicle in minutes.",
+    "primary": "Primary Applicant",
+    "co": "Co-Applicant",
+    "general": "General Information",
+    "residential": "Residential Status",
+    "employment": "Employment",
+    "disclaimer": "I hereby acknowledge, authorize and grant permission that the information contained in this credit application can and will be submitted on my behalf to financial institutions for the sole purpose of securing financing, and or credit, for the purchase/lease of a vehicle.",
+    "submit": "Submit & Continue to Payment",
+    "signature": "Applicant Signature"
+  },
+
   "about": {
     "title": "About Us",
     "p1": "United Automotive Consultants is a <strong>trusted</strong> auto broker proudly serving drivers throughout New Jersey.",
