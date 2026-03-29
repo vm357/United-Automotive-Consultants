@@ -1192,6 +1192,16 @@ input {
   resize: none;
 }
 
+contact-info a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
 /* MOBILE */
 @media (max-width: 768px) {
   .contact-hero {
