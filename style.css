@@ -478,7 +478,7 @@ input:checked + .slider:before {
 
 .about .section-container img {
   width: 100%;
-  margin-right: 60px;
+  margin-right: 0px;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.203);
 }
