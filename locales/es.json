@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "services": "Servicios",
+    "preapproved": "Preaprobación",
+    "insurance": "Seguro",
+    "contact": "Contáctanos"
+  },
+  "hero": {
+    "title": "United Automotive Consultants",
+    "subtitle": "El mejor todo-en-uno en NJ",
+    "subtext": "Corredor de Autos y Seguros",
+    "line1": "Buscamos entre docenas de concesionarios y aseguradoras por ti.",
+    "line2": "Sin cargos ocultos. Sin trucos de concesionarios. Sin complicaciones.",
+    "formTitle": "Encuentra tu auto ideal",
+    "button": "Comienza hoy"
+  },
+  "form": {
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "phone": "Número de teléfono",
+    "email": "Correo electrónico",
+    "car": "¿Qué auto estás buscando?",
+    "auto": "Solo Auto",
+    "insurance": "Solo Seguro",
+    "both": "Auto + Seguro"
+  },
+  "about": {
+    "title": "Sobre Nosotros",
+    "p1": "United Automotive Consultants es un corredor de autos de <strong>confianza</strong> que atiende con orgullo a conductores en todo Nueva Jersey.",
+    "p2": "Fundado por un ex gerente de concesionario con más de 10 años de experiencia, entendemos lo <strong>frustrante y agotador</strong> que puede ser el proceso de comprar un auto, especialmente cuando negocias por tu cuenta.",
+    "p3": "Por eso creamos una mejor solución: <strong>un solo corredor dedicado</strong> que se encarga de todo por ti, de principio a fin.",
+    "p4": "Nos especializamos en conseguir el <strong>mejor precio de compra</strong> para el vehículo que deseas, mientras comparamos las mejores compañías de seguros para obtener las tarifas más bajas. Trabajamos con <strong>cualquier situación crediticia</strong>, lo que hace que el proceso sea sencillo y sin complicaciones.",
+    "p5": "Trabajarás directamente con un experto que negociará por ti. Nunca por el concesionario ni por la la compañía de seguros. Sin cargos ocultos. Sin presiones. Solo un servicio transparente y fiable de principio a fin."
+  },
+  "why": {
+    "title": "¿Por qué Elegirnos?",
+    "p1": "<strong>Un Agente Especializado, Dos Grandes Ahorros</strong> Nos encargamos tanto de la compra de tu auto como del seguro de auto en un solo lugar, lo que te ahorra tiempo y te ofrece mejores ofertas que si los contrataras por separado.",
+    "p2": "<strong>Negociación experta a tu favor</strong> Nuestro fundador, un exgerente de concesionario con más de 10 años de experiencia, sabe exactamente cómo negociar el mejor precio para que usted no tenga que perder horas de su tiempo (ni pagar de más).",
+    "p3": "<strong>Trabajamos con Todo Tipo de Historiales Crediticios</strong> No importa si tienes un buen historial crediticio, uno malo o si no tienes historial: no hay problema. Ofrecemos opciones de aprobación garantizada adaptadas a tu situación.",
+    "p4": "<strong>Sin Cargos Ocultos • Sin Presiones • Sin Trucos de Concesionario</strong> Trabajamos exclusivamente para ti - nunca para el concesionario ni para la compañía de seguros.",
+    "p5": "<strong>Verdadera Comodidad</strong> De principio a fin, nos encargamos de todo por ti. Solo tienes que elegir el auto que te guste y te lo entregamos hasta tu puerta con el mejor precio y la cobertura ya incluida."
+  },
+  "process": {
+    "title": "Nuestro Proceso",
+    "step1": {
+      "title": "Elige un Auto",
+      "desc": "Podemos conseguir el auto que siempre has querido."
+    },
+    "step2": {
+      "title": "Obtén Precalificación",
+      "desc": "Proceso rápido y sencillo de aprobación."
+    },
+    "step3": {
+      "title": "Conduce con Cobertura",
+      "desc": "Entregado a tu puerta con cobertura."
+    }
+  },
+    "footer": {
+        "copyright": "© 2026 United Automotive Consultants.",
+        "rights": "Todos los derechos reservados.",
+        "crafted": "Desarrollado por Kermit Webcraft.",
+        "hours": "Horas de Operación",
+        "hours1": "Lun - Vie: 9am - 8pm",
+        "hours2": "Sáb: 9am - 8pm",
+        "hours3": "Dom: 9am - 8pm",
+        "contact": "Contáctanos",
+        "legal": "Legal",
+        "privacy": "Política de Privacidad",
+        "terms": "Términos de Servicio",
+        "accessibility": "Declaración de Accesibilidad"
+    },
+    "contact": {
+        "title": "Información de Contacto",
+        "hours": "Horas de Operación",
+        "monfri": "Lunes a Viernes",
+        "time": "9:00 AM – 8:00 PM",
+        "sat": "Sábado",
+        "sun": "Domingo",
+        "call": "Llámanos",
+        "location": "Trabajamos En",
+        "states": "Nueva Jersey, Nueva York, & Pensilvania",
+        "email": "Correo Electrónico"
+    },
+    "services": {
+        "title": "Nuestros Servicios",
+        "subtitle": "Simple. Transparente. Diseñado para ahorrarte tiempo y dinero.",
+
+        "leasing": {
+    "title": "Leasing",
+    "desc": "Hacemos que el leasing sea simple y accesible al aprovechar los mejores incentivos de fabricantes y programas exclusivos, logrando los pagos mensuales más bajos posibles."
+  },
+
+  "financing": {
+    "title": "Financiamiento de Autos",
+    "desc": "Facilitamos el financiamiento gracias a nuestras sólidas alianzas con prestamistas líderes, lo que nos permite ofrecer tasas exclusivas y mejores condiciones que la mayoría de los clientes nunca ve."
+  },
+
+  "delivery": {
+    "title": "Entrega",
+    "desc": "Entregamos tu vehículo directamente en tu puerta para que nunca tengas que pisar un concesionario ni lidiar con ventas agresivas."
+  },
+
+  "insurance": {
+    "title": "Seguro de Auto",
+    "desc": "Comparamos las principales aseguradoras para encontrar las tarifas más bajas posibles, asegurando al mismo tiempo la cobertura adecuada para tus necesidades."
+  }
+}
+
+}

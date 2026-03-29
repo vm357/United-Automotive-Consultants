@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "services": "Services",
+    "preapproved": "Get Pre-Approved",
+    "insurance": "Insurance",
+    "contact": "Contact Us"
+  },
+  "hero": {
+    "title": "United Automotive Consultants",
+    "subtitle": "NJ's Best All-in-One",
+    "subtext": "Car and Insurance Broker",
+    "line1": "We shop dozens of dealers & insurers so you don't have to.",
+    "line2": "No hidden fees. No dealership games. No hassle.",
+    "formTitle": "Find Your Perfect Ride",
+    "button": "Get Started Today"
+  },
+  "form": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "phone": "Phone Number",
+    "email": "Email",
+    "car": "What car are you looking for?",
+    "auto": "Just Auto",
+    "insurance": "Just Insurance",
+    "both": "Auto + Insurance"
+  },
+  "about": {
+    "title": "About Us",
+    "p1": "United Automotive Consultants is a <strong>trusted</strong> auto broker proudly serving drivers throughout New Jersey.",
+    "p2": "Founded by a former dealership manager with over 10 years of hands-on experience we understand exactly how <strong>frustrating</strong> and <strong>time-consuming</strong> the car-buying process can be especially when you're negotiating on your own.",
+    "p3": "That's why we built a better way: <strong>one dedicated broker</strong> who handles everything for you from start to finish.",
+    "p4": "We specialize in securing the <strong>best purchase price</strong> on the vehicle you want, while shopping top insurance carriers for the lowest possible rates. We work with <strong>every credit situation</strong>, making the process smooth and stress-free.",
+    "p5": "You'll work directly with one experienced broker who negotiates for you. Never for the dealership or insurer. No hidden fees. No pressure. Just transparent, reliable service from start to finish."
+  },
+  "why": {
+    "title": "Why Us",
+    "p1": "<strong>One Dedicated Broker, Two Major Savings</strong> We handle both your car purchase and auto insurance under one roof — saving you time and delivering better deals than shopping separately.",
+    "p2": "<strong>Expert Negotiation on Your Behalf</strong> Our founder, a former dealership manager with over 10 years of experience, knows exactly how to negotiate the best price so you don't have to waste hours (or overpay).",
+    "p3": "<strong>Works With All Credit Types</strong> Good credit, bad credit, or even no credit — no problem. We provide guaranteed approval options tailored to your situation.",
+    "p4": "<strong>No Hidden Fees • No Pressure • No Dealership Games</strong> We work exclusively for you — never for the dealer or insurance company.",
+    "p5": "<strong>True Convenience</strong> From start to finish, everything is handled for you. You simply choose the car you love and we deliver it right to your doorstep with the best price and coverage already in place."
+  },
+  "process": {
+    "title": "Our Process",
+    "step1": {
+      "title": "Pick a Car",
+      "desc": "We can source any car you dream of."
+    },
+    "step2": {
+      "title": "Get Pre-Qualified",
+      "desc": "Quick and easy approval process."
+    },
+    "step3": {
+      "title": "Drive Off",
+      "desc": "Delivered to your doorstep with coverage."
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 United Automotive Consultants.",
+    "rights": "All rights reserved.",
+    "crafted": "Crafted by Kermit Webcraft.",
+    "hours": "Business Hours",
+    "hours1": "Mon - Fri: 9am - 8pm",
+    "hours2": "Sat: 9am - 8pm",
+    "hours3": "Sun: 9am - 8pm",
+    "contact": "Contact Us",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "accessibility": "Accessibility Statement"
+  }, 
+  "contact": {
+    "title": "Contact Information",
+    "hours": "Business Hours",
+    "monfri": "Monday - Friday",
+    "time": "9:00 AM – 8:00 PM",
+    "sat": "Saturday",
+    "sun": "Sunday",
+    "call": "Call Us",
+    "location": "Working In",
+    "states": "New Jersey, New York, & Pennsylvania",
+    "email": "Email Us"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Simple. Transparent. Built to save you time and money.",
+
+    "leasing": {
+        "title": "Leasing",
+        "desc": "We make leasing simple and affordable by tapping into the best manufacturer rebates and exclusive leasing programs available, delivering the lowest monthly payments possible."
+    },
+
+    "financing": {
+        "title": "Auto Financing",
+        "desc": "We make financing simple and affordable because of our strong partnerships with top lenders, allowing us to access exclusive rates and better terms that most customers never see."
+    },
+    
+    "delivery": {
+        "title": "Delivery",
+        "desc": "We deliver your new car straight to your doorstep so you never have to step foot in a dealership or deal with high-pressure sales tactics."
+    },
+
+    "insurance": {
+        "title": "Auto Insurance",
+        "desc": "We shop top insurance carriers to find you the lowest possible rates while making sure you have the right coverage for your needs."
+    }
+   }
+}

@@ -5,32 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - United Automotive Consultants</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/i18next@23.10.1/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@7.2.0/i18nextBrowserLanguageDetector.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 </head>
 <body>
 
 <!-- NAVBAR -->
-<header class="navbar">
+<header class="navbar" id="navbar">
   <div class="logo" onclick="window.location.href='index.html'" style="cursor:pointer;">
-    <img src="logo1.jpg" alt="United Automotive Consultants Logo">
-  </div>
+  <img src="logo.png" alt="United Automotive Consultants Logo">
+</div>
 
   <nav class="nav-links" id="navLinks">
-    <a href="services.html">Services</a>
-    <a href="getpreapproved.html">Get Pre-Approved</a>
-    <a href="insurance.html">Insurance</a>
-    <a href="contactus.html">Contact Us</a>
+    <a href="services.html" data-i18n="nav.services">Services</a>
+    <a href="getpreapproved.html" data-i18n="nav.preapproved">Get Pre-Approved</a>
+    <a href="insurance.html" data-i18n="nav.insurance">Insurance</a>
+    <a href="contactus.html" data-i18n="nav.contact">Contact Us</a>
   </nav>
 
   <div class="nav-actions">
-    <!-- TOGGLE SWITCH -->
-    <label class="switch">
-      <input type="checkbox" id="langToggle">
-      <span class="slider"></span>
-    </label>
-    <span id="langLabel">English</span>
+    <!-- LANGUAGE BUTTONS -->
+    <button onclick="changeLanguage('en')">ENGLISH</button>
+    <button onclick="changeLanguage('es')">ESPAÑOL</button>
   
-    
+  
     <div class="hamburger" onclick="toggleMenu()">☰</div>
   </div>
 </header>
@@ -48,65 +47,67 @@
 
     <!-- LEFT: FORM -->
     <div class="form-box">
-      <h2 id="formTitle">Find Your Perfect Ride</h2>
+      <h2 id="formTitle" data-i18n="hero.formTitle">Find Your Perfect Ride</h2>
 
       <form action="https://formspree.io/f/YOUR_ID" method="POST">
         <div class =input-group>
           <div class="name-row">
-            <input type="text" name="firstName" placeholder="First Name" required>
-            <input type="text" name="lastName" placeholder="Last Name" required>
+            <input type="text" name="firstName" data-i18n-placeholder="form.firstName" placeholder="First Name" required>
+            <input type="text" name="lastName" data-i18n-placeholder="form.lastName" placeholder="Last Name" required>
           </div>
-          <input type="tel" name="phone" placeholder="Phone Number" required>
-          <input type="email" name="email" placeholder="Email" required>
-          <input type="text" name="car" placeholder="What car are you looking for?" required>
+          <input type="tel" name="phone" data-i18n-placeholder="form.phone" placeholder="Phone Number" required>
+          <input type="email" name="email" data-i18n-placeholder="form.email" placeholder="Email" required>
+          <input type="text" name="car" data-i18n-placeholder="form.car" placeholder="What car are you looking for?" required>
         </div>
         <!-- OPTIONS -->
         <div class="options">
           <label>
             <input type="radio" name="service" value="Auto" required>
-            <span></span>
-            Just Auto
+            <span class="radio-circle"></span>
+            <span class="radio-text" data-i18n="form.auto">Just Auto</span>
           </label>
 
           <label>
             <input type="radio" name="service" value="Insurance">
-            <span></span>
-            Just Insurance
+            <span class="radio-circle"></span>
+            <span class="radio-text" data-i18n="form.insurance">Just Insurance</span>
           </label>
 
           <label>
             <input type="radio" name="service" value="Both">
-            <span></span>
-            Auto + Insurance
+            <span class="radio-circle"></span>
+            <span class="radio-text" data-i18n="form.both">Auto + Insurance</span>
           </label>
         </div>
+        <!-- END OPTIONS -->
 
-        <button type="submit">Get Started Today</button>
+        <button type="submit" data-i18n="hero.button">Get Started Today</button>
       </form>
-    </div>
+    </div> 
+  <!-- END LEFT FORM -->
 
     <!-- RIGHT: INFO -->
     <div class="contact-info">
 
-      <h2>Contact Information</h2>
+      <h2 data-i18n="contact.title">Contact Information</h2>
 
       <div class="info-item">
         <i class="bi bi-clock"></i>
         <div>
-          <h4>Business Hours</h4>
-          <p>Monday - Friday</p>
-          <p>9:00 AM – 8:00 PM</p>
-          <p>Saturday</p>
-          <p>9:00 AM – 8:00 PM</p>
-          <p>Sunday</p>
-          <p>9:00 AM – 8:00 PM</p>
+          <h4 data-i18n="contact.hours">Business Hours</h4>
+          <p data-i18n="contact.monfri">Monday - Friday</p>
+          <p data-i18n="contact.time">9:00 AM – 8:00 PM</p>
+          <p data-i18n="contact.sat">Saturday</p>
+          <p data-i18n="contact.time">9:00 AM – 8:00 PM</p>
+          <p data-i18n="contact.sun">Sunday</p>
+          <p data-i18n="contact.time">9:00 AM – 8:00 PM</p>
         </div>
       </div>
 
       <div class="info-item">
         <i class="bi bi-telephone"></i>
         <div>
-          <h4>Call Us</h4>
+          <h4 data-i18n="contact.call">Call Us</h4>
           <p>(732) 685-2948</p>
         </div>
       </div>
@@ -114,15 +115,15 @@
       <div class="info-item">
         <i class="bi bi-geo-alt"></i>
         <div>
-          <h4>Working In</h4>
-          <p>New Jersey, New York, & Pennsylvania</p>
+          <h4 data-i18n="contact.location">Working In</h4>
+          <p data-i18n="contact.states">New Jersey, New York, & Pennsylvania</p>
         </div>
       </div>
 
       <div class="info-item">
         <i class="bi bi-envelope"></i>
         <div>
-          <h4>Email Us</h4>
+          <h4 data-i18n="contact.email">Email Us</h4>
           <p>jose@unitedautomotive.com</p>
         </div>
       </div>
@@ -139,22 +140,22 @@
 
     <!-- LEFT: BRAND -->
     <div class="footer-col">
-      <p>© 2026 United Automotive Consultants.</p>
-      <p>All rights reserved.</p>
-      <p><strong>Crafted by Kermit Webcraft.</strong></p>
+      <p data-i18n="footer.copyright">© 2026 United Automotive Consultants.</p>
+      <p data-i18n="footer.rights">All rights reserved.</p>
+      <p data-i18n="footer.crafted"><strong>Crafted by Kermit Webcraft.</strong></p>
     </div>
 
     <!-- BUSINESS HOURS -->
     <div class="footer-col">
-      <h4>Business Hours</h4>
-      <p>Mon - Fri: 9am - 8pm</p>
-      <p>Sat: 9am - 8pm</p>
-      <p>Sun: 9am - 8pm</p>
+      <h4 data-i18n="footer.hours">Business Hours</h4>
+      <p data-i18n="footer.hours1">Mon - Fri: 9am - 8pm</p>
+      <p data-i18n="footer.hours2">Sat: 9am - 8pm</p>
+      <p data-i18n="footer.hours3">Sun: 9am - 8pm</p>
     </div>
 
     <!-- CONTACT INFO -->
     <div class="footer-col">
-      <h4>Contact</h4>
+      <h4 data-i18n="footer.contact">Contact Us</h4>
 
       <p><i class="bi bi-telephone"></i> (732) 685-2948</p>
       <p><i class="bi bi-envelope"></i> jose@unitedautomotive.com</p>
@@ -171,15 +172,14 @@
 
     <!-- LEGAL LINKS -->
     <div class="footer-col">
-      <h4>Legal</h4>
-      <p><a href="#">Privacy Policy</a></p>
-      <p><a href="#">Terms of Service</a></p>
-      <p><a href="#">Accessibility Statement</a></p>
+      <h4 data-i18n="footer.legal">Legal</h4>
+      <p><a href="#" data-i18n="footer.privacy">Privacy Policy</a></p>
+      <p><a href="#" data-i18n="footer.terms">Terms of Service</a></p>
+      <p><a href="#" data-i18n="footer.accessibility">Accessibility Statement</a></p>
     </div>
 
   </div>
 </footer>
-<!-- END FOOTER -->
 
 <script src="script.js"></script>
 </body>
