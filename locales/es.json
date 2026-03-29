@@ -18,6 +18,7 @@
     "firstName": "Nombre",
     "middleName": "Segundo nombre",
     "lastName": "Apellido",
+    "dob": "Fecha de nacimiento (MM/DD/AAAA) *",
     "phone": "Número de teléfono",
     "email": "Correo electrónico",
     "car": "¿Qué auto estás buscando?",

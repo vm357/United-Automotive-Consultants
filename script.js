@@ -1,5 +1,9 @@
 function toggleMenu() {
-  document.getElementById("navLinks").classList.toggle("active");
+  const nav = document.getElementById("navLinks");
+  const burger = document.querySelector(".hamburger");
+
+  nav.classList.toggle("active");
+  burger.classList.toggle("active");
 }
 
 /* NAVBAR SCROLL EFFECT */
