@@ -1,3 +1,4 @@
+/* HAMBURGER MENU TOGGLE */
 function toggleMenu() {
   const nav = document.getElementById("navLinks");
   const burger = document.querySelector(".hamburger");
