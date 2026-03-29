@@ -727,12 +727,13 @@ input:checked + .slider:before {
   }
 
   .section-container .image {
-    margin: 0;
+    display: flex;
+    justify-content: center ;
   }
 
   .section-container img {
-    display: block;
-    margin: 0;
+    width: 100%;
+    max-width: 400px;
   }
 }
 
