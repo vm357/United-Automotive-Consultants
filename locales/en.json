@@ -15,7 +15,12 @@
     "formTitle": "Find Your Perfect Ride",
     "button": "Get Started Today",
     "insFormTitle": "Get Coverage",
-    "insButton": "Get Free Quote Today"
+    "insButton": "Get Free Quote Today",
+    "insSubtitle": "We are NJ's #1",
+    "insSubtext": "Auto Insurance Broker",
+    "insLine1": "We shop top insurance carriers for the lowest possible rates.",
+    "insLine2": "We ensure you get the best coverage for your needs at a price that fits your budget."
+
   },
   "form": {
     "firstName": "First Name",

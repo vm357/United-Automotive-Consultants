@@ -15,7 +15,11 @@
     "formTitle": "Encuentra tu auto ideal",
     "button": "Comienza hoy",
     "insFormTitle": "Obtén Cobertura",
-    "insButton": "Obtén una cotización gratis hoy"
+    "insButton": "Obtén una cotización gratis hoy",
+    "insSubtitle": "Somos el #1 en NJ",
+    "insSubtext": "Corredor de Seguros de Autos",
+    "insLine1": "Buscamos entre las mejores aseguradoras para obtener las mejores tarifas posibles.",
+    "insLine2": "Nos aseguramos de que obtengas la mejor cobertura para tus necesidades a un precio que se ajuste a tus presupuestos."
 
   },
   "form": {
