@@ -36,7 +36,67 @@
       <span></span>
     </div>
   </div>
-</header>   
+</header>
+<!-- END NAVBAR -->
+
+<!-- HERO / INSURANCE SECTION -->
+ <!-- HERO SECTION -->
+<section class="hero">
+  <video autoplay muted loop class="hero-video">
+    <source src="https://www.pexels.com/download/video/4081706/" type="video/mp4">
+  </video>
+
+  <div class="overlay"></div>
+
+  <div class="hero-container">
+
+  <!-- RIGHT: FORM -->
+    <div class="form-box">
+      <h2 id="insFormTitle" data-i18n="hero.insFormTitle">Get Coverage</h2>
+
+      <form action="https://formspree.io/f/YOUR_ID" method="POST">
+        <div class =input-group>
+          <div class="name-row">
+            <input type="text" name="firstName" data-i18n-placeholder="form.firstName" placeholder="First Name" required>
+            <input type="text" name="lastName" data-i18n-placeholder="form.lastName" placeholder="Last Name" required>
+          </div>
+
+          <div class="contact-row">
+            <input type="tel" name="phone" data-i18n-placeholder="form.phone" placeholder="Phone Number" required>
+            <input type="email" name="email" data-i18n-placeholder="form.email" placeholder="Email" required>
+          </div>
+          
+          <input type="date" name="dob" data-i18n-placeholder="form.dob" placeholder="Date of Birth" required>
+          <input type="text" name="license" data-i18n-placeholder="form.license" placeholder="Driver's License #" required>
+          <input type="text" name="car" data-i18n-placeholder="form.carCoverage" placeholder="What car are you looking to get insurance for?" required>
+        </div>
+
+        <button type="submit" data-i18n="hero.insButton">Get Free Quote Today</button>
+      </form>
+    </div> 
+  <!-- END LEFT FORM --> 
+
+  <!-- LEFT: TEXT -->
+    <div class="hero-text">
+      <h2 id="heroSubtitle" data-i18n="hero.subtitle">We are NJ's #1</h2>
+      <h3 id="heroSubtext" data-i18n="hero.subtext">Auto Insurance Broker</h3>
+
+      <p id="heroLine1" data-i18n="hero.line1">
+        We shop top insurance carriers for the lowest possible rates.
+      </p>
+
+      <p id="heroLine2" data-i18n="hero.line2">
+        We ensure you get the best coverage for your needs at a price that fits your budget.
+      </p>
+
+      <a href="tel:+17326852948" class="call-button">
+        <img src="callusnow.png" alt="Call us now" style="cursor:pointer;">
+      </a>
+    </div>
+
+  </div>
+</section>
+<!-- END HERO SECTION -->
 
 
 <!-- FOOTER -->

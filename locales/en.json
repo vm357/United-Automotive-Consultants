@@ -13,7 +13,9 @@
     "line1": "We shop dozens of dealers & insurers so you don't have to.",
     "line2": "No hidden fees. No dealership games. No hassle.",
     "formTitle": "Find Your Perfect Ride",
-    "button": "Get Started Today"
+    "button": "Get Started Today",
+    "insFormTitle": "Get Coverage",
+    "insButton": "Get Free Quote Today"
   },
   "form": {
     "firstName": "First Name",
@@ -26,6 +28,7 @@
     "auto": "Just Auto",
     "insurance": "Just Insurance",
     "both": "Auto + Insurance",
+    "carCoverage": "What car are you looking to get insurance for?",
 
     "address": "Address",
     "city": "City",

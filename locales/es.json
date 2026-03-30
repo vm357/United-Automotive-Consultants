@@ -13,7 +13,10 @@
     "line1": "Buscamos entre docenas de concesionarios y aseguradoras por ti.",
     "line2": "Sin cargos ocultos. Sin trucos de concesionarios. Sin complicaciones.",
     "formTitle": "Encuentra tu auto ideal",
-    "button": "Comienza hoy"
+    "button": "Comienza hoy",
+    "insFormTitle": "Obtén Cobertura",
+    "insButton": "Obtén una cotización gratis hoy"
+
   },
   "form": {
     "firstName": "Nombre",
@@ -26,6 +29,7 @@
     "auto": "Solo Auto",
     "insurance": "Solo Seguro",
     "both": "Auto + Seguro",
+    "carCoverage": "¿Para qué auto estás buscando seguro?",
 
     "address": "Dirección",
     "city": "Ciudad",
