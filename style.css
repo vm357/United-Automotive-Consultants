@@ -176,7 +176,8 @@ input:checked + .slider:before {
 
 /*---------- HERO & FORM SECTION ----------*/
 .hero {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   position: relative;
 }
 
@@ -189,6 +190,10 @@ input:checked + .slider:before {
   height: 100%;
   padding: 0 8%;
   flex-direction: row-reverse;
+}
+
+.hero-container {
+  padding-top: 140px;
 }
 
 .hero-video {
@@ -353,6 +358,7 @@ input:checked + .slider:before {
 .hero-text {
   max-width: 500px;
   margin-right: 40px;
+  margin-bottom: 20px;
 }
 
 .hero-text h1, .hero-text h2{
@@ -431,6 +437,10 @@ input:checked + .slider:before {
   transition: 0.2s ease;
   background: white;
   padding: 0 5px;
+}
+
+.input-group input::placeholder {
+  color: #666;
 }
 
 /* FLOAT EFFECT */
@@ -664,7 +674,7 @@ input:checked + .slider:before {
 
   .form-box {
     width: 100%;
-    margin-bottom: 500px;
+    margin-bottom: 20px;
   }
 
   .hero-text h1 {
@@ -1305,7 +1315,9 @@ contact-info a {
   .input-group input {
     font-size: 14px;
     padding: 10px;
-  };
+    background: white;
+    color: #000;  
+  }
 
   .info-item {
     flex-direction: column;
