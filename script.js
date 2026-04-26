@@ -168,7 +168,47 @@ function clearSignature(type) {
 }
 
 // For demonstration purposes, this just redirects to a test Stripe checkout page. In a real application, you would want to handle the form submission, validate the data, and then create a checkout session on your server before redirecting.
-//submit & go to payment page
+/* 
 function goToPayment() {
   window.location.href = "https://buy.stripe.com/test_xxxxx";
+}
+*/
+// Submit & go to payment page
+const creditForm = document.getElementById("creditForm");
+
+if (creditForm) {
+  creditForm.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    // Append signatures as Base64 strings
+    const primaryCanvas = document.getElementById("signaturePadPrimary");
+    const coCanvas = document.getElementById("signaturePadCo");
+
+    if (primaryCanvas) {
+      data.append("primary_signature", primaryCanvas.toDataURL());
+    }
+
+    if (coCanvas) {
+      data.append("co_signature", coCanvas.toDataURL());
+    }
+
+    try {
+      await fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      // Redirect AFTER successful submission
+      window.location.href = "https://buy.stripe.com/test_xxxxx";
+
+    } catch (error) {
+      alert("Something went wrong. Please try again.");
+    }
+  });
 }

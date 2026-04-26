@@ -49,8 +49,10 @@
 <!-- APPLICATION SECTION -->
 <section class="application-section">
 
-  <form id="creditForm">
-
+  <form id="creditForm" action="https://formspree.io/f/mjgjzpgp" method="POST">
+    <input type="hidden" name="_subject" value="New Credit Application!">
+    <input type="hidden" name="_captcha" value="true"> <!-- ENABLEs CAPTCHA -->
+    
     <div class="application-grid">
 
       <!-- PRIMARY APPLICANT -->
@@ -61,82 +63,82 @@
         <h3 data-i18n="pre.general">General Information</h3>
 
         <div class="form-row">
-          <input type="text" data-i18n-placeholder="form.firstName" placeholder="First Name *" required>
-          <input type="text" data-i18n-placeholder="form.middleName" placeholder="Middle Name">
-          <input type="text" data-i18n-placeholder="form.lastName" placeholder="Last Name *" required>
+          <input type="text" name="primary_first_name" data-i18n-placeholder="form.firstName" placeholder="First Name *" required>
+          <input type="text" name="primary_middle_name" data-i18n-placeholder="form.middleName" placeholder="Middle Name">
+          <input type="text" name="primary_last_name" data-i18n-placeholder="form.lastName" placeholder="Last Name *" required>
         </div>
 
         <label for="dob" class="date-label" data-i18n="form.dob">Date of Birth (MM/DD/YYYY) *</label>
-        <input type="date" data-i18n-placeholder="form.dob" placeholder="Date of Birth *" required>
-        <input type="tel" data-i18n-placeholder="form.phone" placeholder="Cell Phone *" required>
-        <input type="email" data-i18n-placeholder="form.email" placeholder="Email *" required>
+        <input type="date" name="primary_date_of_birth" data-i18n-placeholder="form.dob" placeholder="Date of Birth *" required>
+        <input type="tel" name="primary_phone" data-i18n-placeholder="form.phone" placeholder="Cell Phone *" required>
+        <input type="email" name="primary_email" data-i18n-placeholder="form.email" placeholder="Email *" required>
 
-        <input type="text" data-i18n-placeholder="form.address" placeholder="Address *" required>
+        <input type="text" name="primary_address" data-i18n-placeholder="form.address" placeholder="Address *" required>
 
         <div class="form-row">
-          <input type="text" data-i18n-placeholder="form.city" placeholder="City *" required>
-          <input type="text" data-i18n-placeholder="form.state" placeholder="State *" required>
-          <input type="text" data-i18n-placeholder="form.zip" placeholder="ZIP Code *" required>
+          <input type="text" name="primary_city" data-i18n-placeholder="form.city" placeholder="City *" required>
+          <input type="text" name="primary_state" data-i18n-placeholder="form.state" placeholder="State *" required>
+          <input type="text" name="primary_zip" data-i18n-placeholder="form.zip" placeholder="ZIP Code *" required>
         </div>
 
         <!-- HOW LONG -->
         <div class="form-row">
-          <input type="number" id="yearsPrimary" data-i18n-placeholder="form.years" placeholder="Years *" required>
-          <input type="number" data-i18n-placeholder="form.months" placeholder="Months *" required>
+          <input type="number" name="primary_years" id="yearsPrimary" data-i18n-placeholder="form.years" placeholder="Years *" required>
+          <input type="number" name="primary_months" data-i18n-placeholder="form.months" placeholder="Months *" required>
         </div>
 
-        <input type="text" id="prevAddressPrimary" data-i18n-placeholder="form.prevAddress" placeholder="Previous Address" style="display:none;">
+        <input type="text" name="primary_previous_address" id="prevAddressPrimary" data-i18n-placeholder="form.prevAddress" placeholder="Previous Address" style="display:none;">
 
         <div id="prevAddressTimePrimary" class="form-row" style="display:none;">
-          <input type="number" data-i18n-placeholder="form.years">
-          <input type="number" data-i18n-placeholder="form.months">
+          <input type="number" name="primary_previous_address_years" data-i18n-placeholder="form.years">
+          <input type="number" name="primary_previous_address_months" data-i18n-placeholder="form.months">
         </div>
 
-        <input type="text" data-i18n-placeholder="form.license" placeholder="Driver's License *" required>
-        <input type="text" data-i18n-placeholder="form.ssn" placeholder="Social Security *" required>
+        <input type="text" name="primary_drivers_license" data-i18n-placeholder="form.license" placeholder="Driver's License *" required>
+        <input type="text" name="primary_ssn" data-i18n-placeholder="form.ssn" placeholder="Social Security *" required>
 
         <!-- RESIDENTIAL -->
         <h3 data-i18n="pre.residential">Residential Status</h3>
 
         <div class="radio-group">
           <label>
-            <input type="radio" name="resPrimary">
+            <input type="radio" name="resPrimary" value="Own" required>
             <span class="radio-circle"></span>
             <span class="radio-text" data-i18n="form.own">Own</span>
           </label>
 
           <label>
-            <input type="radio" name="resPrimary">
+            <input type="radio" name="resPrimary" value="Rent">
             <span class="radio-circle"></span>
             <span class="radio-text" data-i18n="form.rent">Rent</span>
           </label>
 
           <label>
-            <input type="radio" name="resPrimary">
+            <input type="radio" name="resPrimary" value="Parents">
             <span class="radio-circle"></span>
             <span class="radio-text" data-i18n="form.parents">Parents</span>
           </label>
         </div>
 
-        <input type="text" data-i18n-placeholder="form.rentMortgage" placeholder="Monthly Rent/Mortgage *" required>
+        <input type="text" name="primary_rent_or_mortgage" data-i18n-placeholder="form.rentMortgage" placeholder="Monthly Rent/Mortgage *" required>
 
         <!-- EMPLOYMENT -->
         <h3 data-i18n="pre.employment">Employment</h3>
 
-        <input type="text" data-i18n-placeholder="form.employer" placeholder="Employer Name *" required>
-        <input type="text" data-i18n-placeholder="form.occupation" placeholder="Occupation *" required>
-        <input type="tel" data-i18n-placeholder="form.employerPhone" placeholder="Employer Phone *" required>
-        <input type="text" data-i18n-placeholder="form.income" placeholder="Gross Monthly Income *" required>
+        <input type="text" name="primary_employer" data-i18n-placeholder="form.employer" placeholder="Employer Name *" required>
+        <input type="text" name="primary_occupation" data-i18n-placeholder="form.occupation" placeholder="Occupation *" required>
+        <input type="tel" name="primary_employer_phone" data-i18n-placeholder="form.employerPhone" placeholder="Employer Phone *" required>
+        <input type="text" name="primary_income" data-i18n-placeholder="form.income" placeholder="Gross Monthly Income *" required>
 
         <div class="form-row">
-          <input type="number" id="empYearsPrimary" data-i18n-placeholder="form.years" placeholder="Years *" required>
-          <input type="number" data-i18n-placeholder="form.months" placeholder="Months *" required>
+          <input type="number" name="primary_employment_years" id="empYearsPrimary" data-i18n-placeholder="form.years" placeholder="Years *" required>
+          <input type="number" name="primary_employment_months" data-i18n-placeholder="form.months" placeholder="Months *" required>
         </div>
 
-        <input type="text" id="prevEmployerPrimary" data-i18n-placeholder="form.prevEmployer" placeholder="Previous Employer" style="display:none;">
+        <input type="text" name="primary_previous_employer" id="prevEmployerPrimary" data-i18n-placeholder="form.prevEmployer" placeholder="Previous Employer" style="display:none;">
         <div id="prevEmployerTimePrimary" class="form-row" style="display:none;">
-          <input type="number" data-i18n-placeholder="form.years">
-          <input type="number" data-i18n-placeholder="form.months">
+          <input type="number" name="primary_previous_employment_years" data-i18n-placeholder="form.years">
+          <input type="number" name="primary_previous_employment_months" data-i18n-placeholder="form.months">
         </div>
 
       </div>
@@ -149,79 +151,79 @@
         <h3 data-i18n="pre.general">General Information</h3>
 
         <div class="form-row">
-          <input type="text" data-i18n-placeholder="form.firstName" placeholder="First Name">
-          <input type="text" data-i18n-placeholder="form.middleName" placeholder="Middle Name">
-          <input type="text" data-i18n-placeholder="form.lastName" placeholder="Last Name">
+          <input type="text" name="co_first_name" data-i18n-placeholder="form.firstName" placeholder="First Name">
+          <input type="text" name="co_middle_name" data-i18n-placeholder="form.middleName" placeholder="Middle Name">
+          <input type="text" name="co_last_name" data-i18n-placeholder="form.lastName" placeholder="Last Name">
         </div>
 
         <label for="dobCo" class="date-label" data-i18n="form.dob">Date of Birth (MM/DD/YYYY)</label>
-        <input type="date" data-i18n-placeholder="form.dob" placeholder="Date of Birth">
-        <input type="tel" data-i18n-placeholder="form.phone" placeholder="Cell Phone">
-        <input type="email" data-i18n-placeholder="form.email" placeholder="Email">
+        <input type="date" name="co_date_of_birth" data-i18n-placeholder="form.dob" placeholder="Date of Birth">
+        <input type="tel" name="co_phone" data-i18n-placeholder="form.phone" placeholder="Cell Phone">
+        <input type="email" name="co_email" data-i18n-placeholder="form.email" placeholder="Email">
 
-        <input type="text" data-i18n-placeholder="form.address" placeholder="Address">
+        <input type="text" name="co_address" data-i18n-placeholder="form.address" placeholder="Address">
 
         <div class="form-row">
-          <input type="text" data-i18n-placeholder="form.city" placeholder="City">
-          <input type="text" data-i18n-placeholder="form.state" placeholder="State">
-          <input type="text" data-i18n-placeholder="form.zip" placeholder="ZIP">
+          <input type="text" name="co_city" data-i18n-placeholder="form.city" placeholder="City">
+          <input type="text" name="co_state" data-i18n-placeholder="form.state" placeholder="State">
+          <input type="text" name="co_zip" data-i18n-placeholder="form.zip" placeholder="ZIP">
         </div>
 
         <div class="form-row">
-          <input type="number" id="yearsCo" data-i18n-placeholder="form.years" placeholder="Years">
-          <input type="number" data-i18n-placeholder="form.months" placeholder="Months">
+          <input type="number" name="co_years" id="yearsCo" data-i18n-placeholder="form.years" placeholder="Years">
+          <input type="number" name="co_months" data-i18n-placeholder="form.months" placeholder="Months">
         </div>
 
-        <input type="text" id="prevAddressCo" data-i18n-placeholder="form.prevAddress" placeholder="Previous Address" style="display:none;">
+        <input type="text" name="co_previous_address" id="prevAddressCo" data-i18n-placeholder="form.prevAddress" placeholder="Previous Address" style="display:none;">
 
         <div id="prevAddressTimeCo" class="form-row" style="display:none;">
-          <input type="number" data-i18n-placeholder="form.years">
-          <input type="number" data-i18n-placeholder="form.months">
+          <input type="number" name="co_previous_address_years" data-i18n-placeholder="form.years">
+          <input type="number" name="co_previous_address_months" data-i18n-placeholder="form.months">
         </div>
 
-        <input type="text" data-i18n-placeholder="form.license" placeholder="Driver's License">
-        <input type="text" data-i18n-placeholder="form.ssn" placeholder="SSN">
+        <input type="text" name="co_drivers_license" data-i18n-placeholder="form.license" placeholder="Driver's License">
+        <input type="text" name="co_ssn" data-i18n-placeholder="form.ssn" placeholder="SSN">
 
         <h3 data-i18n="pre.residential">Residential Status</h3>
 
         <div class="radio-group">
           <label>
-            <input type="radio" name="resCo">
+            <input type="radio" name="resCo" value="Own">
             <span class="radio-circle"></span>
             <span class="radio-text" data-i18n="form.own">Own</span>
           </label>
 
           <label>
-            <input type="radio" name="resCo">
+            <input type="radio" name="resCo" value="Rent">
             <span class="radio-circle"></span>
             <span class="radio-text" data-i18n="form.rent">Rent</span>
           </label>
 
           <label>
-            <input type="radio" name="resCo">
+            <input type="radio" name="resCo" value="Parents">
             <span class="radio-circle"></span>
             <span class="radio-text" data-i18n="form.parents">Parents</span>
           </label>
         </div>
 
-        <input type="text" data-i18n-placeholder="form.rentMortgage" placeholder="Monthly Rent/Mortgage">
+        <input type="text" name="co_rent_or_mortgage" data-i18n-placeholder="form.rentMortgage" placeholder="Monthly Rent/Mortgage">
 
         <h3 data-i18n="pre.employment">Employment</h3>
 
-        <input type="text" data-i18n-placeholder="form.employer" placeholder="Employer Name">
-        <input type="text" data-i18n-placeholder="form.occupation" placeholder="Occupation">
-        <input type="tel" data-i18n-placeholder="form.employerPhone" placeholder="Employer Phone">
-        <input type="text" data-i18n-placeholder="form.income" placeholder="Income">
+        <input type="text" name="co_employer" data-i18n-placeholder="form.employer" placeholder="Employer Name">
+        <input type="text" name="co_ocupation" data-i18n-placeholder="form.occupation" placeholder="Occupation">
+        <input type="tel" name="co_employer_phone" data-i18n-placeholder="form.employerPhone" placeholder="Employer Phone">
+        <input type="text" name="co_income" data-i18n-placeholder="form.income" placeholder="Income">
 
         <div class="form-row">
-          <input type="number" id="empYearsCo" data-i18n-placeholder="form.years" placeholder="Years">
-          <input type="number" data-i18n-placeholder="form.months" placeholder="Months">
+          <input type="number" name="co_employment_years" id="empYearsCo" data-i18n-placeholder="form.years" placeholder="Years">
+          <input type="number" name="co_employment_months" data-i18n-placeholder="form.months" placeholder="Months">
         </div>
 
-        <input type="text" id="prevEmployerCo" data-i18n-placeholder="form.prevEmployer" placeholder="Previous Employer" style="display:none;">
+        <input type="text" name="co_previous_employer" id="prevEmployerCo" data-i18n-placeholder="form.prevEmployer" placeholder="Previous Employer" style="display:none;">
         <div id="prevEmployerTimeCo" class="form-row" style="display:none;">
-          <input type="number" data-i18n-placeholder="form.years">
-          <input type="number" data-i18n-placeholder="form.months">
+          <input type="number" name="co_previous_employment_years" data-i18n-placeholder="form.years">
+          <input type="number" name="co_previous_employment_months" data-i18n-placeholder="form.months">
         </div>
 
       </div>
@@ -265,7 +267,7 @@
 
 
     <!-- <button class="submit-btn">Submit Application</button> -->
-    <button type="button" onclick="goToPayment()" class="submit-btn" data-i18n="pre.submit">
+    <button type="submit" class="submit-btn" data-i18n="pre.submit">
         Submit & Continue to Payment
     </button>
 
