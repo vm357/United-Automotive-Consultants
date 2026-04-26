@@ -54,9 +54,11 @@
     <div class="form-box">
       <h2 id="formTitle" data-i18n="hero.formTitle">Find Your Perfect Ride</h2>
 
-      <form action="https://formspree.io/f/YOUR_ID" method="POST">
+      <form action="https://formspree.io/f/xjgjzaql" method="POST">
         <div class =input-group>
           <div class="name-row">
+            <input type="hidden" name="_subject" value="New Customer Lead!">
+            <input type="hidden" name="_captcha" value="false"> <!-- DISABLEs CAPTCHA -->
             <input type="text" name="firstName" data-i18n-placeholder="form.firstName" placeholder="First Name" required>
             <input type="text" name="lastName" data-i18n-placeholder="form.lastName" placeholder="Last Name" required>
           </div>
@@ -87,6 +89,7 @@
         <!-- END OPTIONS -->
 
         <button type="submit" data-i18n="hero.button">Get Started Today</button>
+        <input type="hidden" name="_redirect" value="thankyou.html">
       </form>
     </div> 
   <!-- END LEFT FORM -->
