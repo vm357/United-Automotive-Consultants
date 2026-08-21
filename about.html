@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - United Automotive Consultants</title>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="style.css" />
+    <script defer src="https://unpkg.com/i18next@23.10.1/i18next.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="theme-color" content="#050d1c">
+</head>
+<body class="about-page">
+
+<!-- TOP UTILITY BAR -->
+<div class="topbar">
+  <div class="nav-langs">
+    <button type="button" onclick="changeLanguage('en')" aria-label="English"><span class="lang-long">ENGLISH</span><span class="lang-short">EN</span></button>
+    <button type="button" onclick="changeLanguage('es')" aria-label="Español"><span class="lang-long">ESPAÑOL</span><span class="lang-short">ES</span></button>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="logo" onclick="window.location.href='index.html'" style="cursor:pointer;">
+  <img src="logo.webp" alt="United Automotive Consultants Logo" width="500" height="282" fetchpriority="high" decoding="async">
+</div>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="about.html" data-i18n="nav.about">About</a>
+    <a href="getpreapproved.html" data-i18n="nav.preapproved">Get Pre-Approved</a>
+    <a href="insurance.html" data-i18n="nav.insurance">Insurance</a>
+    <a href="contactus.html" data-i18n="nav.contact">Contact</a>
+  </nav>
+
+  <div class="nav-actions">
+    <div class="nav-utility">
+      <a class="nav-call" href="tel:+17326852948" aria-label="Call 732-685-2948">
+        <i class="bi bi-telephone-fill" aria-hidden="true"></i><span>732-685-2948</span>
+      </a>
+    </div>
+    
+    <div class="hamburger" role="button" tabindex="0" aria-label="Menu" aria-expanded="false" aria-controls="navLinks" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+<!-- END NAVBAR -->
+
+<!-- PAGE HERO -->
+<section class="services-header">
+  <h1 data-i18n="about.pageTitle">About Us</h1>
+</section>
+
+<!-- TRUST BAR -->
+<section class="trust-bar">
+  <div class="trust-inner">
+
+    <div class="trust-item">
+      <i class="bi bi-award"></i>
+      <span data-i18n="trust.exp">Best Deal Guaranteed, Everytime</span>
+    </div>
+
+    <div class="trust-item">
+      <i class="bi bi-person-check"></i>
+      <span data-i18n="trust.credit">All Credit Types Welcome</span>
+    </div>
+
+    <div class="trust-item">
+      <i class="bi bi-clock-history"></i>
+      <span data-i18n="trust.delivery">12+ Client Hours Saved</span>
+    </div>
+
+    <div class="trust-item">
+      <i class="bi bi-house-check"></i>
+      <span data-i18n="trust.fees">0 Dealership Visits</span>
+    </div>
+
+  </div>
+</section>
+<!-- END TRUST BAR -->
+
+<!-- ABOUT US SECTION -->
+<section class="about fade-up">
+  <div class="about-split">
+
+    <div class="about-intro">
+      <h2 data-i18n="about.storyTitle">Our Story</h2>
+      <p class="about-lead" data-i18n="about.p1">
+        United Automotive Consultants is a <strong>trusted</strong> auto broker proudly serving drivers all throughout New Jersey.
+      </p>
+      <img loading="lazy" decoding="async" width="1400" height="788" src="car1.webp" alt="Car">
+    </div>
+
+    <div class="about-cards">
+
+    <article class="about-card">
+      <i class="bi bi-person-badge"></i>
+      <p data-i18n="about.p2">
+        Founded by a former dealership manager with over 10 years of hands-on experience, 
+        we understand exactly how <strong>frustrating</strong> and <strong>time-consuming</strong> the car-buying process can be especially when you're negotiating on your own.
+      </p>
+    </article>
+
+    <article class="about-card">
+      <i class="bi bi-signpost-2"></i>
+      <p data-i18n="about.p3">
+        That's why we built a better way: <strong>one dedicated broker</strong> who handles everything for you from start to finish.
+      </p>
+    </article>
+
+    <article class="about-card">
+      <i class="bi bi-cash-coin"></i>
+      <p data-i18n="about.p4">
+        We specialize in securing the <strong>best purchase price</strong> on the vehicle you want, 
+        while shopping top insurance carriers for the lowest possible rates. 
+        We work with <strong>every credit situation</strong>, making the process smooth and stress-free.
+      </p>
+    </article>
+
+    <article class="about-card">
+      <i class="bi bi-hand-thumbs-up"></i>
+      <p data-i18n="about.p5">
+        You'll work directly with one experienced broker who negotiates for you. 
+        Never for the dealership or insurer. No hidden fees. No pressure. 
+        Just transparent, reliable service from start to finish.
+      </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+<!-- END ABOUT US SECTION -->
+
+<!-- WHY US SECTION -->
+<section class="why-us fade-up">
+  <div class="why-head">
+    <h2 data-i18n="why.title">Why Us</h2>
+    <p class="why-sub" data-i18n="about.pageSubtitle">A Broker Pays For Itself</p>
+  </div>
+
+  <div class="why-grid">
+
+    <article class="why-card">
+      <span class="why-num">01</span>
+      <p data-i18n="why.p1">
+        <strong>One Dedicated Broker, Two Major Savings</strong> We handle both your car purchase and auto insurance under one roof — 
+        saving you time and delivering better deals than shopping separately.
+      </p>
+    </article>
+
+    <article class="why-card">
+      <span class="why-num">02</span>
+      <p data-i18n="why.p2">
+        <strong>Expert Negotiation on Your Behalf</strong> Our founder, a former dealership manager with over 10 years of experience, 
+        knows exactly how to negotiate the best price so you don't have to waste hours or overpay.
+      </p>
+    </article>
+
+    <article class="why-card">
+      <span class="why-num">03</span>
+      <p data-i18n="why.p3">
+        <strong>Works With All Credit Types</strong> Good credit, bad credit, or even no credit — no problem. 
+        We provide guaranteed approval options tailored to your situation.
+      </p>
+    </article>
+
+    <article class="why-card">
+      <span class="why-num">04</span>
+      <p data-i18n="why.p4">
+        <strong>No Hidden Fees • No Pressure • No Dealership Games</strong> We work exclusively for you — never for the dealer or insurance company.
+      </p>
+    </article>
+
+    <article class="why-card">
+      <span class="why-num">05</span>
+      <p data-i18n="why.p5">
+        <strong>Time is the Real Cost</strong> The average buyer spends 12+ hours shopping and negotiating.
+        We compress that into a couple of conversations.
+      </p>
+    </article>
+
+  </div>
+</section>
+<!-- END WHY US SECTION -->
+
+<!-- PHOTO BAND -->
+<section class="photo-band">
+  <img loading="lazy" decoding="async" width="1200" height="738" src="car2.webp" alt="Car delivered to a customer's driveway">
+</section>
+<!-- END PHOTO BAND -->
+
+<!-- MISSION STATEMENT -->
+<section class="mission fade-up">
+  <div class="mission-inner">
+    <h2 data-i18n="mission.title">Our Mission Statement</h2>
+    <p class="mission-statement" data-i18n="mission.p1">"Put the buyer back in control."</p>
+    <p class="mission-note" data-i18n="mission.p2">The dealership model is built to favor the dealership. Information is hidden, time is a tactic, and the person across the desk is paid to maximize what you spend. We flip that on its head.</p>
+
+    <figure class="mission-gauge">
+      <div class="gauge-stack">
+        <img loading="lazy" decoding="async" width="886" height="498" src="gauge-dial.webp" alt="Gauge with the needle pointed at Favors Buyers, between Favors Sellers and Balanced">
+        <svg class="gauge-needle" viewBox="0 0 886 498" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="needleFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#55575a"></stop>
+              <stop offset="0.5" stop-color="#161719"></stop>
+              <stop offset="1" stop-color="#0a0a0b"></stop>
+            </linearGradient>
+          </defs>
+          <g class="gauge-needle-arm">
+            <polygon points="715.5,444.5 452,433.5 400,436.5 379.5,444.5 400,452.5 452,455.5" fill="url(#needleFill)"></polygon>
+            <circle cx="442.5" cy="444.5" r="27" fill="#1b1c1e"></circle>
+            <circle cx="442.5" cy="444.5" r="11" fill="#3d3f42"></circle>
+          </g>
+        </svg>
+      </div>
+      <figcaption data-i18n="mission.gauge">Where we put the needle on every deal.</figcaption>
+    </figure>
+  </div>
+</section>
+<!-- END MISSION STATEMENT -->
+
+<!-- CTA -->
+<section class="services-cta home-cta fade-up">
+  <div class="cta-inner">
+    <h2 data-i18n="aboutCta.title">Now let's talk about your car.</h2>
+    <p data-i18n="aboutCta.text">Tell us what you are looking for and we will bring back real numbers to work from.</p>
+
+    <div class="cta-actions">
+      <a href="contactus.html" class="cta-btn cta-btn-primary" data-i18n="aboutCta.talk">Start the Conversation</a>
+      <a href="tel:+17326852948" class="cta-btn cta-btn-ghost">
+        <i class="bi bi-telephone-fill"></i> <span data-i18n="cta.call">(732) 685-2948</span>
+      </a>
+    </div>
+
+    <p class="cta-note" data-i18n="aboutCta.note">Serving NJ, NY &amp; PA. Open seven days a week, 9am to 8pm.</p>
+  </div>
+</section>
+<!-- END CTA -->
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- BRAND -->
+    <div class="footer-col footer-brand">
+      <a href="index.html" class="footer-logo"><img src="logo.webp" alt="United Automotive Consultants" width="180" height="60"></a>
+      <p data-i18n="footer.copyright">© 2026 United Automotive Consultants.</p>
+      <p data-i18n="footer.rights">All rights reserved.</p>
+    </div>
+
+    <!-- BUSINESS HOURS -->
+    <div class="footer-col">
+      <h4 data-i18n="footer.hours">Business Hours</h4>
+      <p data-i18n="footer.hours1">Mon - Fri: 9am - 8pm</p>
+      <p data-i18n="footer.hours2">Sat: 9am - 8pm</p>
+      <p data-i18n="footer.hours3">Sun: 9am - 8pm</p>
+    </div>
+
+    <!-- LEGAL LINKS -->
+    <div class="footer-col">
+      <h4 data-i18n="footer.legal">Legal</h4>
+      <p><a href="privacypolicy.html" data-i18n="footer.privacy">Privacy Policy</a></p>
+      <p><a href="termsofservice.html" data-i18n="footer.terms">Terms of Service</a></p>
+      <p><a href="accessibilitystmt.html" data-i18n="footer.accessibility">Accessibility Statement</a></p>
+    </div>
+
+    <!-- CONTACT INFO -->
+    <div class="footer-col">
+      <h4 data-i18n="footer.contact">Contact Us</h4>
+      <p><a href="tel:+17326852948"><i class="bi bi-telephone"></i> (732) 685-2948</a></p>
+      <p><a href="mailto:jmartinez@uacnj.com"><i class="bi bi-envelope"></i> jmartinez@uacnj.com</a></p>
+      <p><i class="bi bi-geo-alt"></i> NJ, NY, & PA</p>
+    </div>
+
+  </div>
+
+  <nav class="footer-nav">
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="about.html" data-i18n="nav.about">About</a>
+    <a href="getpreapproved.html" data-i18n="nav.preapproved">Get Pre-Approved</a>
+    <a href="insurance.html" data-i18n="nav.insurance">Insurance</a>
+    <a href="contactus.html" data-i18n="nav.contact">Contact</a>
+  </nav>
+
+  <div class="footer-bottom">
+    <a class="crafted-link" href="https://kermitwebcraft.com/" target="_blank" rel="noopener" data-i18n="footer.crafted"><strong>Crafted by Kermit Webcraft.</strong></a>
+  </div>
+
+</footer>
+
+<script defer src="script.js"></script>
+</body>
+</html>

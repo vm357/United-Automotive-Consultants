@@ -1,10 +1,20 @@
 {
+  "thanks": {
+    "title": "Application received",
+    "lead": "Thank you. Your credit application is in and a broker is reviewing it now.",
+    "next": "What happens next",
+    "step1": "We review your application and pull financing options that fit it.",
+    "step2": "A broker calls you, usually the same business day, to walk through the numbers.",
+    "step3": "Nothing moves forward until you approve it.",
+    "home": "Back to Home",
+    "call": "Call Us Now"
+  },
   "nav": {
     "home": "Home",
-    "services": "Services",
     "preapproved": "Get Pre-Approved",
     "insurance": "Insurance",
-    "contact": "Contact Us"
+    "contact": "Contact",
+    "about": "About"
   },
   "hero": {
     "title": "United Automotive Consultants",
@@ -20,7 +30,6 @@
     "insSubtext": "Auto Insurance Broker",
     "insLine1": "We shop top insurance carriers for the lowest possible rates.",
     "insLine2": "We ensure you get the best coverage for your needs at a price that fits your budget."
-
   },
   "form": {
     "firstName": "First Name",
@@ -34,7 +43,6 @@
     "insurance": "Just Insurance",
     "both": "Auto + Insurance",
     "carCoverage": "What car are you looking to get insurance for?",
-
     "address": "Address",
     "city": "City",
     "state": "State",
@@ -50,11 +58,10 @@
     "income": "Gross Monthly Income",
     "prevAddress": "Previous Address",
     "prevEmployer": "Previous Employer",
-
     "own": "Own",
     "rent": "Rent",
-    "parents": "With Parents"
-
+    "parents": "With Parents",
+    "dobShort": "Date of Birth"
   },
   "pre": {
     "header": "Get Pre-Approved",
@@ -66,16 +73,33 @@
     "employment": "Employment",
     "disclaimer": "I hereby acknowledge, authorize and grant permission that the information contained in this credit application can and will be submitted on my behalf to financial institutions for the sole purpose of securing financing, and or credit, for the purchase/lease of a vehicle.",
     "submit": "Submit & Continue to Payment",
-    "signature": "Applicant Signature"
+    "signature": "Applicant Signature",
+    "addCo": "Add a Co-Applicant",
+    "removeCo": "Remove Co-Applicant",
+    "secure": "Your details are sent securely and used only to seek financing approval.",
+    "timeAddress": "Time at Address",
+    "timeAtPrevious": "Time at Previous Address",
+    "timeEmployment": "Time with Employer",
+    "timeAtPreviousJob": "Time with Previous Employer",
+    "underThree": "Under 3 years? A previous address is required.",
+    "signHint": "Sign here",
+    "clear": "Clear",
+    "submitNote": "Submitting does not affect your credit score.",
+    "signRequired": "Please sign in the box above before submitting.",
+    "submitting": "Submitting…",
+    "meta1": "Secure & Encrypted",
+    "meta2": "About 5 Minutes",
+    "meta3": "All Credit Types"
   },
-
   "about": {
-    "title": "About Us",
-    "p1": "United Automotive Consultants is a <strong>trusted</strong> auto broker proudly serving drivers throughout New Jersey.",
+    "p1": "United Automotive Consultants is a <strong>trusted</strong> auto broker proudly serving drivers all throughout New Jersey.",
     "p2": "Founded by a former dealership manager with over 10 years of hands-on experience we understand exactly how <strong>frustrating</strong> and <strong>time-consuming</strong> the car-buying process can be especially when you're negotiating on your own.",
     "p3": "That's why we built a better way: <strong>one dedicated broker</strong> who handles everything for you from start to finish.",
     "p4": "We specialize in securing the <strong>best purchase price</strong> on the vehicle you want, while shopping top insurance carriers for the lowest possible rates. We work with <strong>every credit situation</strong>, making the process smooth and stress-free.",
-    "p5": "You'll work directly with one experienced broker who negotiates for you. Never for the dealership or insurer. No hidden fees. No pressure. Just transparent, reliable service from start to finish."
+    "p5": "You'll work directly with one experienced broker who negotiates for you. Never for the dealership or insurer. No hidden fees. No pressure. Just transparent, reliable service from start to finish.",
+    "pageTitle": "About Us",
+    "pageSubtitle": "A Broker Pays For Itself",
+    "storyTitle": "Our Story"
   },
   "why": {
     "title": "Why Us",
@@ -83,19 +107,25 @@
     "p2": "<strong>Expert Negotiation on Your Behalf</strong> Our founder, a former dealership manager with over 10 years of experience, knows exactly how to negotiate the best price so you don't have to waste hours (or overpay).",
     "p3": "<strong>Works With All Credit Types</strong> Good credit, bad credit, or even no credit — no problem. We provide guaranteed approval options tailored to your situation.",
     "p4": "<strong>No Hidden Fees • No Pressure • No Dealership Games</strong> We work exclusively for you — never for the dealer or insurance company.",
-    "p5": "<strong>True Convenience</strong> From start to finish, everything is handled for you. You simply choose the car you love and we deliver it right to your doorstep with the best price and coverage already in place."
+    "p5": "<strong>Time is the Real Cost</strong> From start to finish, everything is handled for you. You simply choose the car you love and we deliver it right to your doorstep with the best price and coverage already in place."
   },
   "process": {
-    "title": "Our Process",
+    "title": "How It Works",
+    "ctaPre": "Get Pre-Approved",
+    "ctaDeal": "Get My Deal",
     "step1": {
-      "title": "Pick a Car",
-      "desc": "We can source any car you dream of."
+      "title": "Tell us a car",
+      "desc": "Any make, model, and trim you want."
     },
     "step2": {
-      "title": "Get Pre-Qualified",
-      "desc": "Quick and easy approval process."
+      "title": "We Negotiate",
+      "desc": "We work our dealer network on the price."
     },
     "step3": {
+      "title": "Review Options",
+      "desc": "Compare the offers we bring back."
+    },
+    "step4": {
       "title": "Drive Off",
       "desc": "Delivered to your doorstep with coverage."
     }
@@ -113,7 +143,7 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "accessibility": "Accessibility Statement"
-  }, 
+  },
   "contact": {
     "title": "Contact Information",
     "hours": "Business Hours",
@@ -127,38 +157,130 @@
     "email": "Email Us"
   },
   "services": {
-    "title": "Our Services",
-    "subtitle": "Simple. Transparent. Built to save you time and money.",
-
     "leasing": {
-        "title": "Leasing",
-        "desc": "We make leasing simple and affordable by tapping into the best manufacturer rebates and exclusive leasing programs available, delivering the lowest monthly payments possible."
+      "title": "Leasing"
     },
-
-    "financing": {
-        "title": "Auto Financing",
-        "desc": "We make financing simple and affordable because of our strong partnerships with top lenders, allowing us to access exclusive rates and better terms that most customers never see."
-    },
-    
+    "financing": {},
     "delivery": {
-        "title": "Delivery",
-        "desc": "We deliver your new car straight to your doorstep so you never have to step foot in a dealership or deal with high-pressure sales tactics."
+      "title": "Delivery"
     },
-
     "insurance": {
-        "title": "Auto Insurance",
-        "desc": "We shop top insurance carriers to find you the lowest possible rates while making sure you have the right coverage for your needs."
+      "title": "Auto Insurance"
     },
-
     "usedcars": {
-        "title": "Used Cars",
-        "desc": "Save time and money with our used car brokerage. We locate the exact vehicle you want, negotiate the best price, and guide you through a smooth, transparent purchase from start to finish."
+      "title": "Used Cars"
     },
-
     "tradein": {
-        "title": "Trade-Ins",
-        "desc": "Turn your current vehicle into instant savings on your next ride. We provide fast, fair trade-in valuations based on real market data- no haggling, no surprises."
+      "title": "Trade-Ins"
     }
-    
-   }
+  },
+  "legal": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "sub": "Last updated April 26, 2026"
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "sub": "Last updated April 26, 2026"
+    },
+    "accessibility": {
+      "title": "Accessibility Statement",
+      "sub": "Our commitment to an accessible web experience"
+    }
+  },
+  "cta": {
+    "call": "(732) 685-2948"
+  },
+  "trust": {
+    "exp": "Best Deal Guaranteed, Everytime",
+    "credit": "All Credit Types Welcome",
+    "fees": "0 Dealership Visits",
+    "delivery": "12+ Client Hours Saved"
+  },
+  "homeCta": {
+    "title": "One broker. One call. Done.",
+    "text": "Start with a quick pre-approval and we take it from there — pricing, financing, insurance, and delivery.",
+    "apply": "Start My Pre-Approval",
+    "note": "Takes about two minutes. no obligation, no credit damage."
+  },
+  "ins": {
+    "b1": {
+      "title": "We Shop, You Save",
+      "desc": "One set of details gets quoted across top carriers, so you see the lowest rate available to you instead of guessing."
+    },
+    "b2": {
+      "title": "Coverage That Fits",
+      "desc": "We match limits and deductibles to how you actually drive, so you are not paying for coverage you do not need."
+    },
+    "b3": {
+      "title": "One Person, Start to Finish",
+      "desc": "You work directly with your broker. No call centers, no getting passed around, no pressure."
+    },
+    "b4": {
+      "title": "Buying a Car Too?",
+      "desc": "We handle the purchase and the policy together, so your new vehicle is covered the day it is delivered."
+    },
+    "steps": {
+      "title": "How Your Quote Comes Together"
+    },
+    "s1": {
+      "title": "Send Your Details",
+      "desc": "Fill out the short form above. It takes a couple of minutes and there is no obligation."
+    },
+    "s2": {
+      "title": "We Shop Carriers",
+      "desc": "We run your profile through the carriers we work with and compare what each one will do for you."
+    },
+    "s3": {
+      "title": "You Choose",
+      "desc": "We walk you through the options in plain language and you pick the one that fits your budget."
+    },
+    "cta": {
+      "title": "Find out what you should be paying.",
+      "text": "Send your details and we will come back with the best rate we can find for your coverage.",
+      "quote": "Get My Free Quote",
+      "note": "Licensed in NJ, NY & PA. No obligation to buy."
+    }
+  },
+  "faq": {
+    "title": "Common Questions",
+    "subtitle": "If you do not see your question here, call or send the form above and we will answer it directly.",
+    "q1": "What does a broker do that I cannot do myself?",
+    "a1": "We negotiate with dealers and shop insurance carriers on your behalf, then hand you the numbers side by side. You skip the back and forth and the hours spent at dealerships.",
+    "q2": "Do you charge me a fee?",
+    "a2": "No hidden fees and no pressure. We work for you, not for the dealership or the insurance company.",
+    "q3": "What if my credit is not great?",
+    "a3": "We work with every credit situation, including limited or no credit history, and match you with lenders suited to your profile.",
+    "q4": "Can I get the car and the insurance together?",
+    "a4": "Yes. Handling both is what we do best, and it means your coverage is in place the day the vehicle is delivered.",
+    "q5": "Which areas do you serve?",
+    "a5": "New Jersey, New York, and Pennsylvania. Vehicles are delivered to your door.",
+    "q6": "How soon will I hear back?",
+    "a6": "Send the form and we follow up during business hours, Monday through Sunday, 9:00 AM to 8:00 PM."
+  },
+  "brief": {
+    "title": "What We Do",
+    "subtitle": "Everything involved in getting you into the right car, handled by one broker.",
+    "leasing": "Leasing done right. We model the full cost of every offer — money factor, residual, fees — and lock in terms that actually make sense for how you drive.",
+    "financingTitle": "New Car Purchase/Finance",
+    "financing": "Tell us the make, model, and trim. We source it across our dealer network and negotiate the out-the-door price down — then hand you the keys.",
+    "delivery": "Your car arrives at your door. No showroom, no sales floor.",
+    "insurance": "Top carriers compared for the right coverage at the lowest rate.",
+    "usedcars": "We locate the exact vehicle you want and negotiate the price for you.",
+    "tradein": "Most buyers lose money on the trade-in without realizing it. We benchmark your vehicle’s true value and make sure it’s credited fairly against your deal.",
+    "cta": "Get Pre-Approved",
+    "about": "Learn About Us"
+  },
+  "mission": {
+    "title": "Our Mission Statement",
+    "p1": "\"Put the buyer back in control.\"",
+    "gauge": "Where we put the needle on every deal.",
+    "p2": "The dealership model is built to favor the dealership. Information is hidden, time is a tactic, and the person across the desk is paid to maximize what you spend. We flip that on its head."
+  },
+  "aboutCta": {
+    "title": "Now let's talk about your car.",
+    "text": "Tell us what you are looking for and we will bring back real numbers to work from.",
+    "talk": "Start the Conversation",
+    "note": "Serving NJ, NY & PA. Open seven days a week, 9am to 8pm."
+  }
 }

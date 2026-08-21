@@ -1,10 +1,20 @@
 {
+  "thanks": {
+    "title": "Solicitud recibida",
+    "lead": "Gracias. Su solicitud de crédito fue enviada y un corredor ya la está revisando.",
+    "next": "Qué sigue",
+    "step1": "Revisamos su solicitud y buscamos las opciones de financiamiento que le convienen.",
+    "step2": "Un corredor lo llama, normalmente el mismo día hábil, para repasar las cifras.",
+    "step3": "Nada avanza hasta que usted lo apruebe.",
+    "home": "Volver al Inicio",
+    "call": "Llámenos Ahora"
+  },
   "nav": {
     "home": "Inicio",
-    "services": "Servicios",
     "preapproved": "Preaprobación",
     "insurance": "Seguro",
-    "contact": "Contáctanos"
+    "contact": "Contacto",
+    "about": "Nosotros"
   },
   "hero": {
     "title": "United Automotive Consultants",
@@ -20,7 +30,6 @@
     "insSubtext": "Corredor de Seguros de Autos",
     "insLine1": "Buscamos entre las mejores aseguradoras para obtener las mejores tarifas posibles.",
     "insLine2": "Nos aseguramos de que obtengas la mejor cobertura para tus necesidades a un precio que se ajuste a tus presupuestos."
-
   },
   "form": {
     "firstName": "Nombre",
@@ -34,7 +43,6 @@
     "insurance": "Solo Seguro",
     "both": "Auto + Seguro",
     "carCoverage": "¿Para qué auto estás buscando seguro?",
-
     "address": "Dirección",
     "city": "Ciudad",
     "state": "Estado",
@@ -50,12 +58,11 @@
     "income": "Ingreso mensual bruto",
     "prevAddress": "Dirección anterior",
     "prevEmployer": "Empleador anterior",
-
     "own": "Propietario",
     "rent": "Alquila",
-    "parents": "Con padres"
+    "parents": "Con padres",
+    "dobShort": "Fecha de Nacimiento"
   },
-
   "pre": {
     "header": "Precalifícate",
     "subheader": "Obtén financiamiento para tu próximo vehículo en minutos.",
@@ -66,99 +73,214 @@
     "employment": "Empleo",
     "disclaimer": "Por la presente, reconozco, autorizo y doy mi consentimiento para que la información contenida en esta solicitud de crédito pueda ser y sea remitida en mi nombre a instituciones financieras con el único fin de obtener financiación o crédito para la compra o el arrendamiento de un vehículo.",
     "submit": "Enviar y continuar al pago",
-    "signature": "Firma del solicitante"
-
+    "signature": "Firma del solicitante",
+    "addCo": "Agregar un Co-Solicitante",
+    "removeCo": "Quitar Co-Solicitante",
+    "secure": "Sus datos se envían de forma segura y se utilizan únicamente para solicitar financiamiento.",
+    "timeAddress": "Tiempo en el Domicilio",
+    "timeAtPrevious": "Tiempo en el Domicilio Anterior",
+    "timeEmployment": "Tiempo con el Empleador",
+    "timeAtPreviousJob": "Tiempo con el Empleador Anterior",
+    "underThree": "¿Menos de 3 años? Se requiere un domicilio anterior.",
+    "signHint": "Firme aquí",
+    "clear": "Borrar",
+    "submitNote": "Enviar no afecta su puntaje de crédito.",
+    "signRequired": "Por favor firme en el recuadro antes de enviar.",
+    "submitting": "Enviando…",
+    "meta1": "Seguro y Encriptado",
+    "meta2": "Unos 5 Minutos",
+    "meta3": "Todo Tipo de Crédito"
   },
   "about": {
-    "title": "Sobre Nosotros",
     "p1": "United Automotive Consultants es un corredor de autos de <strong>confianza</strong> que atiende con orgullo a conductores en todo Nueva Jersey.",
     "p2": "Fundado por un ex gerente de concesionario con más de 10 años de experiencia, entendemos lo <strong>frustrante y agotador</strong> que puede ser el proceso de comprar un auto, especialmente cuando negocias por tu cuenta.",
     "p3": "Por eso creamos una mejor solución: <strong>un solo corredor dedicado</strong> que se encarga de todo por ti, de principio a fin.",
     "p4": "Nos especializamos en conseguir el <strong>mejor precio de compra</strong> para el vehículo que deseas, mientras comparamos las mejores compañías de seguros para obtener las tarifas más bajas. Trabajamos con <strong>cualquier situación crediticia</strong>, lo que hace que el proceso sea sencillo y sin complicaciones.",
-    "p5": "Trabajarás directamente con un experto que negociará por ti. Nunca por el concesionario ni por la la compañía de seguros. Sin cargos ocultos. Sin presiones. Solo un servicio transparente y fiable de principio a fin."
+    "p5": "Trabajarás directamente con un experto que negociará por ti. Nunca por el concesionario ni por la la compañía de seguros. Sin cargos ocultos. Sin presiones. Solo un servicio transparente y fiable de principio a fin.",
+    "pageTitle": "Sobre Nosotros",
+    "pageSubtitle": "Un Corredor Se Paga Solo",
+    "storyTitle": "Nuestra Historia"
   },
   "why": {
     "title": "¿Por qué Elegirnos?",
     "p1": "<strong>Un Agente Especializado, Dos Grandes Ahorros</strong> Nos encargamos tanto de la compra de tu auto como del seguro de auto en un solo lugar, lo que te ahorra tiempo y te ofrece mejores ofertas que si los contrataras por separado.",
-    "p2": "<strong>Negociación experta a tu favor</strong> Nuestro fundador, un exgerente de concesionario con más de 10 años de experiencia, sabe exactamente cómo negociar el mejor precio para que usted no tenga que perder horas de su tiempo (ni pagar de más).",
+    "p2": "<strong>Negociación experta a tu favor</strong> Nuestro fundador, un exgerente de concesionario con más de 10 años de experiencia, sabe exactamente cómo negociar el mejor precio para que usted no tenga que perder horas de su tiempo ni pagar de más.",
     "p3": "<strong>Trabajamos con Todo Tipo de Historiales Crediticios</strong> No importa si tienes un buen historial crediticio, uno malo o si no tienes historial: no hay problema. Ofrecemos opciones de aprobación garantizada adaptadas a tu situación.",
     "p4": "<strong>Sin Cargos Ocultos • Sin Presiones • Sin Trucos de Concesionario</strong> Trabajamos exclusivamente para ti - nunca para el concesionario ni para la compañía de seguros.",
-    "p5": "<strong>Verdadera Comodidad</strong> De principio a fin, nos encargamos de todo por ti. Solo tienes que elegir el auto que te guste y te lo entregamos hasta tu puerta con el mejor precio y la cobertura ya incluida."
+    "p5": "<strong>El Tiempo es el Costo Real</strong> El comprador promedio pasa más de 12 horas buscando y negociando. Nosotros lo reducimos a un par de conversaciones."
   },
   "process": {
-    "title": "Nuestro Proceso",
+    "title": "Cómo Funciona",
+    "ctaPre": "Obtenga Preaprobación",
+    "ctaDeal": "Quiero Mi Oferta",
     "step1": {
-      "title": "Elige un Auto",
-      "desc": "Podemos conseguir el auto que siempre has querido."
+      "title": "Díganos un auto",
+      "desc": "Cualquier marca, modelo y versión que quiera."
     },
     "step2": {
-      "title": "Obtén Precalificación",
-      "desc": "Proceso rápido y sencillo de aprobación."
+      "title": "Nosotros Negociamos",
+      "desc": "Trabajamos el precio con nuestra red de concesionarios."
     },
     "step3": {
-      "title": "Conduce con Cobertura",
-      "desc": "Entregado a tu puerta con cobertura."
+      "title": "Revise Opciones",
+      "desc": "Compare las ofertas que le traemos."
+    },
+    "step4": {
+      "title": "Conduzca",
+      "desc": "Entregado a su puerta con cobertura."
     }
   },
-    "footer": {
-        "copyright": "© 2026 United Automotive Consultants.",
-        "rights": "Todos los derechos reservados.",
-        "crafted": "Desarrollado por Kermit Webcraft.",
-        "hours": "Horas de Operación",
-        "hours1": "Lun - Vie: 9am - 8pm",
-        "hours2": "Sáb: 9am - 8pm",
-        "hours3": "Dom: 9am - 8pm",
-        "contact": "Contáctanos",
-        "legal": "Legal",
-        "privacy": "Política de Privacidad",
-        "terms": "Términos de Servicio",
-        "accessibility": "Declaración de Accesibilidad"
+  "footer": {
+    "copyright": "© 2026 United Automotive Consultants.",
+    "rights": "Todos los derechos reservados.",
+    "crafted": "Desarrollado por Kermit Webcraft.",
+    "hours": "Horas de Operación",
+    "hours1": "Lun - Vie: 9am - 8pm",
+    "hours2": "Sáb: 9am - 8pm",
+    "hours3": "Dom: 9am - 8pm",
+    "contact": "Contáctanos",
+    "legal": "Legal",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
+    "accessibility": "Declaración de Accesibilidad"
+  },
+  "contact": {
+    "title": "Información de Contacto",
+    "hours": "Horas de Operación",
+    "monfri": "Lunes a Viernes",
+    "time": "9:00 AM – 8:00 PM",
+    "sat": "Sábado",
+    "sun": "Domingo",
+    "call": "Llámanos",
+    "location": "Trabajamos En",
+    "states": "Nueva Jersey, Nueva York, & Pensilvania",
+    "email": "Correo Electrónico"
+  },
+  "services": {
+    "leasing": {
+      "title": "Arrendamiento de Autos"
     },
-    "contact": {
-        "title": "Información de Contacto",
-        "hours": "Horas de Operación",
-        "monfri": "Lunes a Viernes",
-        "time": "9:00 AM – 8:00 PM",
-        "sat": "Sábado",
-        "sun": "Domingo",
-        "call": "Llámanos",
-        "location": "Trabajamos En",
-        "states": "Nueva Jersey, Nueva York, & Pensilvania",
-        "email": "Correo Electrónico"
+    "financing": {},
+    "delivery": {
+      "title": "Entrega"
     },
-    "services": {
-        "title": "Nuestros Servicios",
-        "subtitle": "Simple. Transparente. Diseñado para ahorrarte tiempo y dinero.",
-
-        "leasing": {
-    "title": "Arrendamiento de Autos",
-    "desc": "Hacemos que el alquiler de un auto sea sencillo y asequible aprovechando los mejores descuentos de los fabricantes y los programas de alquiler exclusivos disponibles, lo que nos permite ofrecer las cuotas mensuales más bajas posibles."
+    "insurance": {
+      "title": "Seguro de Autos"
+    },
+    "usedcars": {
+      "title": "Autos Usados"
+    },
+    "tradein": {
+      "title": "Intercambios"
+    }
   },
-
-  "financing": {
-    "title": "Financiamiento de Autos",
-    "desc": "Hacemos que la financiación sea sencilla y asequible gracias a nuestras sólidas alianzas con las principales entidades crediticias, lo que nos permite acceder a tasas exclusivas y mejores condiciones que la mayoría de los clientes nunca llega a conocer."
+  "legal": {
+    "privacy": {
+      "title": "Política de Privacidad",
+      "sub": "Última actualización: 26 de abril de 2026"
+    },
+    "terms": {
+      "title": "Términos de Servicio",
+      "sub": "Última actualización: 26 de abril de 2026"
+    },
+    "accessibility": {
+      "title": "Declaración de Accesibilidad",
+      "sub": "Nuestro compromiso con una experiencia web accesible"
+    }
   },
-
-  "delivery": {
-    "title": "Entrega",
-    "desc": "Te entregamos tu auto nuevo directamente a tu casa, para que nunca tengas que pisar un concesionario ni lidiar con tácticas de venta agresivas."
+  "cta": {
+    "call": "(732) 685-2948"
   },
-
-  "insurance": {
-    "title": "Seguro de Autos",
-    "desc": "Comparamos las mejores compañías de seguros para encontrarte las tarifas más bajas posibles, asegurándonos al mismo tiempo de que tengas la cobertura adecuada para tus necesidades."
+  "trust": {
+    "exp": "Siempre el Mejor Precio Garantizado",
+    "credit": "Aceptamos Todo Tipo de Crédito",
+    "fees": "0 Visitas al Concesionario",
+    "delivery": "12+ Horas Ahorradas por Cliente"
   },
-
-  "usedcars": {
-    "title": "Autos Usados",
-    "desc": "Ahorra tiempo y dinero con nuestro servicio de intermediación de autos usados. Encontramos el vehículo exacto que buscas, negociamos el mejor precio y te guiamos a lo largo de un proceso de compra sencillo y transparente de principio a fin."
+  "homeCta": {
+    "title": "Un asesor. Una llamada. Listo.",
+    "text": "Comience con una preaprobación rápida y nosotros nos encargamos del resto: precio, financiamiento, seguro y entrega.",
+    "apply": "Comenzar Mi Preaprobación",
+    "note": "Toma unos dos minutos. Sin compromiso y sin afectar su crédito."
   },
-
-  "tradein": {
-    "title": "Intercambios",
-    "desc": "Convierte tu vehículo actual en un ahorro inmediato para tu próximo auto. Ofrecemos valoraciones rápidas y justas para la permuta, basadas en datos reales del mercado: sin regateos ni sorpresas."
+  "ins": {
+    "b1": {
+      "title": "Nosotros Buscamos, Usted Ahorra",
+      "desc": "Con un solo formulario cotizamos con las principales aseguradoras para que vea la tarifa más baja disponible para usted."
+    },
+    "b2": {
+      "title": "Cobertura a Su Medida",
+      "desc": "Ajustamos los límites y deducibles a la forma en que realmente conduce, para que no pague por coberturas que no necesita."
+    },
+    "b3": {
+      "title": "Una Sola Persona, de Principio a Fin",
+      "desc": "Trabaja directamente con su asesor. Sin centros de llamadas, sin transferencias y sin presión."
+    },
+    "b4": {
+      "title": "¿También Está Comprando un Auto?",
+      "desc": "Manejamos la compra y la póliza juntas, para que su vehículo esté cubierto el día de la entrega."
+    },
+    "steps": {
+      "title": "Cómo se Prepara Su Cotización"
+    },
+    "s1": {
+      "title": "Envíe Sus Datos",
+      "desc": "Complete el formulario de arriba. Toma unos minutos y no hay ningún compromiso."
+    },
+    "s2": {
+      "title": "Comparamos Aseguradoras",
+      "desc": "Presentamos su perfil a las aseguradoras con las que trabajamos y comparamos lo que ofrece cada una."
+    },
+    "s3": {
+      "title": "Usted Elige",
+      "desc": "Le explicamos las opciones en palabras sencillas y usted elige la que se ajusta a su presupuesto."
+    },
+    "cta": {
+      "title": "Descubra cuánto debería estar pagando.",
+      "text": "Envíe sus datos y le responderemos con la mejor tarifa que podamos encontrar para su cobertura.",
+      "quote": "Obtener Mi Cotización Gratis",
+      "note": "Con licencia en NJ, NY y PA. Sin compromiso de compra."
+    }
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Si no encuentra su pregunta aquí, llámenos o envíe el formulario y le responderemos directamente.",
+    "q1": "¿Qué hace un asesor que yo no pueda hacer por mi cuenta?",
+    "a1": "Negociamos con los concesionarios y comparamos aseguradoras por usted, y luego le presentamos las cifras una al lado de la otra. Se ahorra las idas y vueltas y las horas en el concesionario.",
+    "q2": "¿Me cobran alguna tarifa?",
+    "a2": "Sin cargos ocultos y sin presión. Trabajamos para usted, no para el concesionario ni para la aseguradora.",
+    "q3": "¿Qué pasa si mi crédito no es bueno?",
+    "a3": "Trabajamos con todo tipo de situación crediticia, incluso con crédito limitado o sin historial, y lo conectamos con prestamistas adecuados para su perfil.",
+    "q4": "¿Puedo obtener el auto y el seguro juntos?",
+    "a4": "Sí. Manejar ambos es nuestra especialidad, y significa que su cobertura estará lista el día de la entrega del vehículo.",
+    "q5": "¿En qué áreas trabajan?",
+    "a5": "Nueva Jersey, Nueva York y Pensilvania. Los vehículos se entregan en su domicilio.",
+    "q6": "¿Qué tan pronto recibiré respuesta?",
+    "a6": "Envíe el formulario y le daremos seguimiento en horario de atención, de lunes a domingo, de 9:00 AM a 8:00 PM."
+  },
+  "brief": {
+    "title": "Lo Que Hacemos",
+    "subtitle": "Todo lo necesario para conseguir el auto adecuado, manejado por un solo asesor.",
+    "leasing": "Arrendamiento bien hecho. Calculamos el costo total de cada oferta — factor de dinero, valor residual, cargos — y fijamos términos que tienen sentido para cómo usted conduce.",
+    "financingTitle": "Compra/Financiamiento de Auto Nuevo",
+    "financing": "Díganos la marca, el modelo y la versión. Lo buscamos en nuestra red de concesionarios y negociamos el precio final a la baja — luego le entregamos las llaves.",
+    "delivery": "Su auto llega a su puerta. Sin sala de exhibición y sin vendedores.",
+    "insurance": "Comparamos las principales aseguradoras para la cobertura correcta a la tarifa más baja.",
+    "usedcars": "Localizamos el vehículo exacto que quiere y negociamos el precio por usted.",
+    "tradein": "La mayoría de los compradores pierden dinero en el intercambio sin darse cuenta. Comparamos el valor real de su vehículo y nos aseguramos de que se acredite justamente en su acuerdo.",
+    "cta": "Obtenga Preaprobación",
+    "about": "Conozca Más Sobre Nosotros"
+  },
+  "mission": {
+    "title": "Nuestra Declaración de Misión",
+    "p1": "\"Devolverle el control al comprador.\"",
+    "gauge": "Donde ponemos la aguja en cada acuerdo.",
+    "p2": "El modelo del concesionario está diseñado para favorecer al concesionario. Se oculta información, el tiempo se usa como táctica, y la persona del otro lado del escritorio cobra por maximizar lo que usted gasta. Nosotros le damos la vuelta a eso."
+  },
+  "aboutCta": {
+    "title": "Ahora hablemos de su auto.",
+    "text": "Cuéntenos qué está buscando y le traeremos cifras reales con las que trabajar.",
+    "talk": "Iniciar la Conversación",
+    "note": "Servicio en NJ, NY y PA. Abierto los siete días, de 9am a 8pm."
   }
-}
-
 }

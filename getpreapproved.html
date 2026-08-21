@@ -4,33 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Pre-Approved - United Automotive Consultants</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://unpkg.com/i18next@23.10.1/i18next.min.js"></script>
-    <script src="https://unpkg.com/i18next-browser-languagedetector@7.2.0/i18nextBrowserLanguageDetector.min.js"></script>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="style.css" />
+    <script defer src="https://unpkg.com/i18next@23.10.1/i18next.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="theme-color" content="#050d1c">
 </head>
-<body>
+<body class="preapproved-page">
+
+<!-- TOP UTILITY BAR -->
+<div class="topbar">
+  <div class="nav-langs">
+    <button type="button" onclick="changeLanguage('en')" aria-label="English"><span class="lang-long">ENGLISH</span><span class="lang-short">EN</span></button>
+    <button type="button" onclick="changeLanguage('es')" aria-label="Español"><span class="lang-long">ESPAÑOL</span><span class="lang-short">ES</span></button>
+  </div>
+</div>
 
 <!-- NAVBAR -->
 <header class="navbar" id="navbar">
   <div class="logo" onclick="window.location.href='index.html'" style="cursor:pointer;">
-  <img src="logo.png" alt="United Automotive Consultants Logo">
+  <img src="logo.webp" alt="United Automotive Consultants Logo" width="500" height="282" fetchpriority="high" decoding="async">
 </div>
 
   <nav class="nav-links" id="navLinks">
-    <a href="index.html" data-i18n="nav.home">Home</a>
-    <a href="services.html" data-i18n="nav.services">Services</a>
+    <a href="about.html" data-i18n="nav.about">About</a>
     <a href="getpreapproved.html" data-i18n="nav.preapproved">Get Pre-Approved</a>
     <a href="insurance.html" data-i18n="nav.insurance">Insurance</a>
-    <a href="contactus.html" data-i18n="nav.contact">Contact Us</a>
+    <a href="contactus.html" data-i18n="nav.contact">Contact</a>
   </nav>
 
   <div class="nav-actions">
-    <!-- LANGUAGE BUTTONS -->
-    <button onclick="changeLanguage('en')">ENGLISH</button>
-    <button onclick="changeLanguage('es')">ESPAÑOL</button>
+    <div class="nav-utility">
+      <a class="nav-call" href="tel:+17326852948" aria-label="Call 732-685-2948">
+        <i class="bi bi-telephone-fill" aria-hidden="true"></i><span>732-685-2948</span>
+      </a>
+    </div>
     
-    <div class="hamburger" onclick="toggleMenu()">
+    <div class="hamburger" role="button" tabindex="0" aria-label="Menu" aria-expanded="false" aria-controls="navLinks" onclick="toggleMenu()">
       <span></span>
       <span></span>
       <span></span>
@@ -44,229 +58,424 @@
 <section class="page-header">
   <h1 data-i18n="pre.header">Get Pre-Approved</h1>
   <p data-i18n="pre.subheader">Secure financing for your next vehicle in minutes.</p>
+
+  <div class="header-meta">
+    <span><i class="bi bi-shield-lock-fill"></i> <span data-i18n="pre.meta1">Secure &amp; Encrypted</span></span>
+    <span><i class="bi bi-clock-fill"></i> <span data-i18n="pre.meta2">About 5 Minutes</span></span>
+    <span><i class="bi bi-person-check-fill"></i> <span data-i18n="pre.meta3">All Credit Types</span></span>
+  </div>
 </section>
 
 <!-- APPLICATION SECTION -->
 <section class="application-section">
+
+  <p class="secure-note"><i class="bi bi-shield-lock"></i> <span data-i18n="pre.secure">Your details are sent securely and used only to seek financing approval.</span></p>
 
   <form id="creditForm" action="https://formslist.com/f/zVPRWE5nAIOz" method="POST">
     <div class="application-grid">
 
       <!-- PRIMARY APPLICANT -->
       <div class="app-box">
-        <h2 data-i18n="pre.primary">Primary Applicant</h2>
 
-        <!-- GENERAL INFO -->
-        <h3 data-i18n="pre.general">General Information</h3>
-
-        <div class="form-row">
-          <input type="text" name="primary_first_name" data-i18n-placeholder="form.firstName" placeholder="First Name *" required>
-          <input type="text" name="primary_middle_name" data-i18n-placeholder="form.middleName" placeholder="Middle Name">
-          <input type="text" name="primary_last_name" data-i18n-placeholder="form.lastName" placeholder="Last Name *" required>
+        <div class="app-box-header">
+          <span class="app-box-num">1</span>
+          <h2 data-i18n="pre.primary">Primary Applicant</h2>
         </div>
 
-        <label for="dob" class="date-label" data-i18n="form.dob">Date of Birth (MM/DD/YYYY) *</label>
-        <input type="date" name="primary_date_of_birth" data-i18n-placeholder="form.dob" placeholder="Date of Birth *" required>
-        <input type="tel" name="primary_phone" data-i18n-placeholder="form.phone" placeholder="Cell Phone *" required>
-        <input type="email" name="primary_email" data-i18n-placeholder="form.email" placeholder="Email *" required>
+        <div class="app-box-body">
 
-        <input type="text" name="primary_address" data-i18n-placeholder="form.address" placeholder="Address *" required>
+          <div class="field-group">
+            <h3 class="field-group-title" data-i18n="pre.general">General Information</h3>
+            <div class="field-grid">
+          <div class="field span-4">
+            <label for="primary_first" data-i18n="form.firstName">First Name <span class="req">*</span></label>
+            <input type="text" id="primary_first" name="primary_first_name" required>
+            
+          </div>
+          <div class="field span-4">
+            <label for="primary_middle" data-i18n="form.middleName">Middle Name</label>
+            <input type="text" id="primary_middle" name="primary_middle_name">
+            
+          </div>
+          <div class="field span-4">
+            <label for="primary_last" data-i18n="form.lastName">Last Name <span class="req">*</span></label>
+            <input type="text" id="primary_last" name="primary_last_name" required>
+            
+          </div>
+          <div class="field span-4">
+            <label for="dob" data-i18n="form.dobShort">Date of Birth <span class="req">*</span></label>
+            <input type="date" id="dob" name="primary_date_of_birth" required>
+            
+          </div>
+          <div class="field span-4">
+            <label for="primary_phone" data-i18n="form.phone">Cell Phone <span class="req">*</span></label>
+            <input type="tel" id="primary_phone" name="primary_phone" required inputmode="tel" data-mask="phone" placeholder="(000) 000-0000">
+            
+          </div>
+          <div class="field span-4">
+            <label for="primary_email" data-i18n="form.email">Email <span class="req">*</span></label>
+            <input type="email" id="primary_email" name="primary_email" required>
+            
+          </div>
+          <div class="field span-12">
+            <label for="primary_address" data-i18n="form.address">Address <span class="req">*</span></label>
+            <input type="text" id="primary_address" name="primary_address" required>
+            
+          </div>
+          <div class="field span-6">
+            <label for="primary_city" data-i18n="form.city">City <span class="req">*</span></label>
+            <input type="text" id="primary_city" name="primary_city" required>
+            
+          </div>
+          <div class="field span-3">
+            <label for="primary_state" data-i18n="form.state">State <span class="req">*</span></label>
+            <input type="text" id="primary_state" name="primary_state" required maxlength="2" style="text-transform:uppercase">
+            
+          </div>
+          <div class="field span-3">
+            <label for="primary_zip" data-i18n="form.zip">Zip Code <span class="req">*</span></label>
+            <input type="text" id="primary_zip" name="primary_zip" required inputmode="numeric" maxlength="5">
+            
+          </div>
 
-        <div class="form-row">
-          <input type="text" name="primary_city" data-i18n-placeholder="form.city" placeholder="City *" required>
-          <input type="text" name="primary_state" data-i18n-placeholder="form.state" placeholder="State *" required>
-          <input type="text" name="primary_zip" data-i18n-placeholder="form.zip" placeholder="ZIP Code *" required>
+              <div class="field span-6 field-pair">
+                <label data-i18n="pre.timeAddress">Time at Address <span class="req">*</span></label>
+                <div class="pair-inputs">
+                  <input type="number" min="0" id="yearsPrimary" name="primary_years" required data-i18n-placeholder="form.years" placeholder="Years">
+                  <input type="number" min="0" max="11" name="primary_months" required data-i18n-placeholder="form.months" placeholder="Months">
+                </div>
+                <span class="field-hint" data-i18n="pre.underThree">Under 3 years? A previous address is required.</span>
+              </div>
+
+              <div class="field span-6 conditional" id="prevAddressPrimary" style="display:none;">
+                <label data-i18n="form.prevAddress">Previous Address <span class="req">*</span></label>
+                <input type="text" name="primary_previous_address">
+              </div>
+
+              <div class="field span-6 conditional field-pair" id="prevAddressTimePrimary" style="display:none;">
+                <label data-i18n="pre.timeAtPrevious">Time at Previous Address <span class="req">*</span></label>
+                <div class="pair-inputs">
+                  <input type="number" min="0" name="primary_previous_address_years" data-i18n-placeholder="form.years" placeholder="Years">
+                  <input type="number" min="0" max="11" name="primary_previous_address_months" data-i18n-placeholder="form.months" placeholder="Months">
+                </div>
+              </div>
+
+          <div class="field span-6">
+            <label for="primary_dl" data-i18n="form.license">Driver's License <span class="req">*</span></label>
+            <input type="text" id="primary_dl" name="primary_drivers_license" required>
+            
+          </div>
+          <div class="field span-6">
+            <label for="primary_ssn" data-i18n="form.ssn">Social Security Number <span class="req">*</span></label>
+            <input type="text" id="primary_ssn" name="primary_ssn" required inputmode="numeric" data-mask="ssn" placeholder="000-00-0000" autocomplete="off">
+            
+          </div>
+            </div>
+          </div>
+
+          <div class="field-group">
+            <h3 class="field-group-title" data-i18n="pre.residential">Residential Status <span class="req">*</span></h3>
+            <div class="radio-group">
+              <label>
+                <input type="radio" name="resPrimary" value="Own" required>
+                <span class="radio-circle"></span>
+                <span class="radio-text" data-i18n="form.own">Own</span>
+              </label>
+              <label>
+                <input type="radio" name="resPrimary" value="Rent">
+                <span class="radio-circle"></span>
+                <span class="radio-text" data-i18n="form.rent">Rent</span>
+              </label>
+              <label>
+                <input type="radio" name="resPrimary" value="Parents">
+                <span class="radio-circle"></span>
+                <span class="radio-text" data-i18n="form.parents">With Parents</span>
+              </label>
+            </div>
+            <div class="field-grid">
+          <div class="field span-6">
+            <label for="primary_rent" data-i18n="form.rentMortgage">Monthly Rent/Mortgage <span class="req">*</span></label>
+            <input type="text" id="primary_rent" name="primary_rent_or_mortgage" required inputmode="numeric" data-mask="money" placeholder="$0">
+            
+          </div>
+            </div>
+          </div>
+
+          <div class="field-group">
+            <h3 class="field-group-title" data-i18n="pre.employment">Employment</h3>
+            <div class="field-grid">
+          <div class="field span-6">
+            <label for="primary_employer" data-i18n="form.employer">Employer Name <span class="req">*</span></label>
+            <input type="text" id="primary_employer" name="primary_employer" required>
+            
+          </div>
+          <div class="field span-6">
+            <label for="primary_occupation" data-i18n="form.occupation">Occupation <span class="req">*</span></label>
+            <input type="text" id="primary_occupation" name="primary_occupation" required>
+            
+          </div>
+          <div class="field span-6">
+            <label for="primary_emp_phone" data-i18n="form.employerPhone">Employer Phone <span class="req">*</span></label>
+            <input type="tel" id="primary_emp_phone" name="primary_employer_phone" required inputmode="tel" data-mask="phone" placeholder="(000) 000-0000">
+            
+          </div>
+          <div class="field span-6">
+            <label for="primary_income" data-i18n="form.income">Gross Monthly Income <span class="req">*</span></label>
+            <input type="text" id="primary_income" name="primary_income" required inputmode="numeric" data-mask="money" placeholder="$0">
+            
+          </div>
+
+              <div class="field span-6 field-pair">
+                <label data-i18n="pre.timeEmployment">Time with Employer <span class="req">*</span></label>
+                <div class="pair-inputs">
+                  <input type="number" min="0" id="empYearsPrimary" name="primary_employment_years" required data-i18n-placeholder="form.years" placeholder="Years">
+                  <input type="number" min="0" max="11" name="primary_employment_months" required data-i18n-placeholder="form.months" placeholder="Months">
+                </div>
+              </div>
+
+              <div class="field span-6 conditional" id="prevEmployerPrimary" style="display:none;">
+                <label data-i18n="form.prevEmployer">Previous Employer <span class="req">*</span></label>
+                <input type="text" name="primary_previous_employer">
+              </div>
+
+              <div class="field span-6 conditional field-pair" id="prevEmployerTimePrimary" style="display:none;">
+                <label data-i18n="pre.timeAtPreviousJob">Time with Previous Employer <span class="req">*</span></label>
+                <div class="pair-inputs">
+                  <input type="number" min="0" name="primary_previous_employment_years" data-i18n-placeholder="form.years" placeholder="Years">
+                  <input type="number" min="0" max="11" name="primary_previous_employment_months" data-i18n-placeholder="form.months" placeholder="Months">
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-
-        <!-- HOW LONG -->
-        <div class="form-row">
-          <input type="number" name="primary_years" id="yearsPrimary" data-i18n-placeholder="form.years" placeholder="Years *" required>
-          <input type="number" name="primary_months" data-i18n-placeholder="form.months" placeholder="Months *" required>
-        </div>
-
-        <input type="text" name="primary_previous_address" id="prevAddressPrimary" data-i18n-placeholder="form.prevAddress" placeholder="Previous Address" style="display:none;">
-
-        <div id="prevAddressTimePrimary" class="form-row" style="display:none;">
-          <input type="number" name="primary_previous_address_years" data-i18n-placeholder="form.years">
-          <input type="number" name="primary_previous_address_months" data-i18n-placeholder="form.months">
-        </div>
-
-        <input type="text" name="primary_drivers_license" data-i18n-placeholder="form.license" placeholder="Driver's License *" required>
-        <input type="text" name="primary_ssn" data-i18n-placeholder="form.ssn" placeholder="Social Security *" required>
-
-        <!-- RESIDENTIAL -->
-        <h3 data-i18n="pre.residential">Residential Status</h3>
-
-        <div class="radio-group">
-          <label>
-            <input type="radio" name="resPrimary" value="Own" required>
-            <span class="radio-circle"></span>
-            <span class="radio-text" data-i18n="form.own">Own</span>
-          </label>
-
-          <label>
-            <input type="radio" name="resPrimary" value="Rent">
-            <span class="radio-circle"></span>
-            <span class="radio-text" data-i18n="form.rent">Rent</span>
-          </label>
-
-          <label>
-            <input type="radio" name="resPrimary" value="Parents">
-            <span class="radio-circle"></span>
-            <span class="radio-text" data-i18n="form.parents">Parents</span>
-          </label>
-        </div>
-
-        <input type="text" name="primary_rent_or_mortgage" data-i18n-placeholder="form.rentMortgage" placeholder="Monthly Rent/Mortgage *" required>
-
-        <!-- EMPLOYMENT -->
-        <h3 data-i18n="pre.employment">Employment</h3>
-
-        <input type="text" name="primary_employer" data-i18n-placeholder="form.employer" placeholder="Employer Name *" required>
-        <input type="text" name="primary_occupation" data-i18n-placeholder="form.occupation" placeholder="Occupation *" required>
-        <input type="tel" name="primary_employer_phone" data-i18n-placeholder="form.employerPhone" placeholder="Employer Phone *" required>
-        <input type="text" name="primary_income" data-i18n-placeholder="form.income" placeholder="Gross Monthly Income *" required>
-
-        <div class="form-row">
-          <input type="number" name="primary_employment_years" id="empYearsPrimary" data-i18n-placeholder="form.years" placeholder="Years *" required>
-          <input type="number" name="primary_employment_months" data-i18n-placeholder="form.months" placeholder="Months *" required>
-        </div>
-
-        <input type="text" name="primary_previous_employer" id="prevEmployerPrimary" data-i18n-placeholder="form.prevEmployer" placeholder="Previous Employer" style="display:none;">
-        <div id="prevEmployerTimePrimary" class="form-row" style="display:none;">
-          <input type="number" name="primary_previous_employment_years" data-i18n-placeholder="form.years">
-          <input type="number" name="primary_previous_employment_months" data-i18n-placeholder="form.months">
-        </div>
-
       </div>
 
-      <!-- CO APPLICANT -->
-      <div class="app-box">
-        <h2 data-i18n="pre.co">Co-Applicant</h2>
+    <div class="co-toggle-wrap">
+      <button type="button" class="co-toggle" id="coApplicantToggle" aria-expanded="false" aria-controls="coApplicantBox">
+        <span class="co-toggle-icon">+</span>
+        <span data-i18n="pre.addCo">Add a Co-Applicant</span>
+      </button>
+    </div>
 
-        <!-- SAME STRUCTURE -->
-        <h3 data-i18n="pre.general">General Information</h3>
+      <!-- CO-APPLICANT -->
+      <div class="app-box co-applicant co-applicant-hidden" id="coApplicantBox">
 
-        <div class="form-row">
-          <input type="text" name="co_first_name" data-i18n-placeholder="form.firstName" placeholder="First Name">
-          <input type="text" name="co_middle_name" data-i18n-placeholder="form.middleName" placeholder="Middle Name">
-          <input type="text" name="co_last_name" data-i18n-placeholder="form.lastName" placeholder="Last Name">
+        <div class="app-box-header">
+          <span class="app-box-num">2</span>
+          <h2 data-i18n="pre.co">Co-Applicant</h2>
         </div>
 
-        <label for="dobCo" class="date-label" data-i18n="form.dob">Date of Birth (MM/DD/YYYY)</label>
-        <input type="date" name="co_date_of_birth" data-i18n-placeholder="form.dob" placeholder="Date of Birth">
-        <input type="tel" name="co_phone" data-i18n-placeholder="form.phone" placeholder="Cell Phone">
-        <input type="email" name="co_email" data-i18n-placeholder="form.email" placeholder="Email">
+        <div class="app-box-body">
 
-        <input type="text" name="co_address" data-i18n-placeholder="form.address" placeholder="Address">
+          <div class="field-group">
+            <h3 class="field-group-title" data-i18n="pre.general">General Information</h3>
+            <div class="field-grid">
+          <div class="field span-4">
+            <label for="co_first" data-i18n="form.firstName">First Name <span class="req">*</span></label>
+            <input type="text" id="co_first" name="co_first_name" required>
+            
+          </div>
+          <div class="field span-4">
+            <label for="co_middle" data-i18n="form.middleName">Middle Name</label>
+            <input type="text" id="co_middle" name="co_middle_name">
+            
+          </div>
+          <div class="field span-4">
+            <label for="co_last" data-i18n="form.lastName">Last Name <span class="req">*</span></label>
+            <input type="text" id="co_last" name="co_last_name" required>
+            
+          </div>
+          <div class="field span-4">
+            <label for="dobCo" data-i18n="form.dobShort">Date of Birth <span class="req">*</span></label>
+            <input type="date" id="dobCo" name="co_date_of_birth" required>
+            
+          </div>
+          <div class="field span-4">
+            <label for="co_phone" data-i18n="form.phone">Cell Phone <span class="req">*</span></label>
+            <input type="tel" id="co_phone" name="co_phone" required inputmode="tel" data-mask="phone" placeholder="(000) 000-0000">
+            
+          </div>
+          <div class="field span-4">
+            <label for="co_email" data-i18n="form.email">Email <span class="req">*</span></label>
+            <input type="email" id="co_email" name="co_email" required>
+            
+          </div>
+          <div class="field span-12">
+            <label for="co_address" data-i18n="form.address">Address <span class="req">*</span></label>
+            <input type="text" id="co_address" name="co_address" required>
+            
+          </div>
+          <div class="field span-6">
+            <label for="co_city" data-i18n="form.city">City <span class="req">*</span></label>
+            <input type="text" id="co_city" name="co_city" required>
+            
+          </div>
+          <div class="field span-3">
+            <label for="co_state" data-i18n="form.state">State <span class="req">*</span></label>
+            <input type="text" id="co_state" name="co_state" required maxlength="2" style="text-transform:uppercase">
+            
+          </div>
+          <div class="field span-3">
+            <label for="co_zip" data-i18n="form.zip">Zip Code <span class="req">*</span></label>
+            <input type="text" id="co_zip" name="co_zip" required inputmode="numeric" maxlength="5">
+            
+          </div>
 
-        <div class="form-row">
-          <input type="text" name="co_city" data-i18n-placeholder="form.city" placeholder="City">
-          <input type="text" name="co_state" data-i18n-placeholder="form.state" placeholder="State">
-          <input type="text" name="co_zip" data-i18n-placeholder="form.zip" placeholder="ZIP">
+              <div class="field span-6 field-pair">
+                <label data-i18n="pre.timeAddress">Time at Address <span class="req">*</span></label>
+                <div class="pair-inputs">
+                  <input type="number" min="0" id="yearsCo" name="co_years" required data-i18n-placeholder="form.years" placeholder="Years">
+                  <input type="number" min="0" max="11" name="co_months" required data-i18n-placeholder="form.months" placeholder="Months">
+                </div>
+                <span class="field-hint" data-i18n="pre.underThree">Under 3 years? A previous address is required.</span>
+              </div>
+
+              <div class="field span-6 conditional" id="prevAddressCo" style="display:none;">
+                <label data-i18n="form.prevAddress">Previous Address <span class="req">*</span></label>
+                <input type="text" name="co_previous_address">
+              </div>
+
+              <div class="field span-6 conditional field-pair" id="prevAddressTimeCo" style="display:none;">
+                <label data-i18n="pre.timeAtPrevious">Time at Previous Address <span class="req">*</span></label>
+                <div class="pair-inputs">
+                  <input type="number" min="0" name="co_previous_address_years" data-i18n-placeholder="form.years" placeholder="Years">
+                  <input type="number" min="0" max="11" name="co_previous_address_months" data-i18n-placeholder="form.months" placeholder="Months">
+                </div>
+              </div>
+
+          <div class="field span-6">
+            <label for="co_dl" data-i18n="form.license">Driver's License <span class="req">*</span></label>
+            <input type="text" id="co_dl" name="co_drivers_license" required>
+            
+          </div>
+          <div class="field span-6">
+            <label for="co_ssn" data-i18n="form.ssn">Social Security Number <span class="req">*</span></label>
+            <input type="text" id="co_ssn" name="co_ssn" required inputmode="numeric" data-mask="ssn" placeholder="000-00-0000" autocomplete="off">
+            
+          </div>
+            </div>
+          </div>
+
+          <div class="field-group">
+            <h3 class="field-group-title" data-i18n="pre.residential">Residential Status <span class="req">*</span></h3>
+            <div class="radio-group">
+              <label>
+                <input type="radio" name="resCo" value="Own" required>
+                <span class="radio-circle"></span>
+                <span class="radio-text" data-i18n="form.own">Own</span>
+              </label>
+              <label>
+                <input type="radio" name="resCo" value="Rent">
+                <span class="radio-circle"></span>
+                <span class="radio-text" data-i18n="form.rent">Rent</span>
+              </label>
+              <label>
+                <input type="radio" name="resCo" value="Parents">
+                <span class="radio-circle"></span>
+                <span class="radio-text" data-i18n="form.parents">With Parents</span>
+              </label>
+            </div>
+            <div class="field-grid">
+          <div class="field span-6">
+            <label for="co_rent" data-i18n="form.rentMortgage">Monthly Rent/Mortgage <span class="req">*</span></label>
+            <input type="text" id="co_rent" name="co_rent_or_mortgage" required inputmode="numeric" data-mask="money" placeholder="$0">
+            
+          </div>
+            </div>
+          </div>
+
+          <div class="field-group">
+            <h3 class="field-group-title" data-i18n="pre.employment">Employment</h3>
+            <div class="field-grid">
+          <div class="field span-6">
+            <label for="co_employer" data-i18n="form.employer">Employer Name <span class="req">*</span></label>
+            <input type="text" id="co_employer" name="co_employer" required>
+            
+          </div>
+          <div class="field span-6">
+            <label for="co_occupation" data-i18n="form.occupation">Occupation <span class="req">*</span></label>
+            <input type="text" id="co_occupation" name="co_occupation" required>
+            
+          </div>
+          <div class="field span-6">
+            <label for="co_emp_phone" data-i18n="form.employerPhone">Employer Phone <span class="req">*</span></label>
+            <input type="tel" id="co_emp_phone" name="co_employer_phone" required inputmode="tel" data-mask="phone" placeholder="(000) 000-0000">
+            
+          </div>
+          <div class="field span-6">
+            <label for="co_income" data-i18n="form.income">Gross Monthly Income <span class="req">*</span></label>
+            <input type="text" id="co_income" name="co_income" required inputmode="numeric" data-mask="money" placeholder="$0">
+            
+          </div>
+
+              <div class="field span-6 field-pair">
+                <label data-i18n="pre.timeEmployment">Time with Employer <span class="req">*</span></label>
+                <div class="pair-inputs">
+                  <input type="number" min="0" id="empYearsCo" name="co_employment_years" required data-i18n-placeholder="form.years" placeholder="Years">
+                  <input type="number" min="0" max="11" name="co_employment_months" required data-i18n-placeholder="form.months" placeholder="Months">
+                </div>
+              </div>
+
+              <div class="field span-6 conditional" id="prevEmployerCo" style="display:none;">
+                <label data-i18n="form.prevEmployer">Previous Employer <span class="req">*</span></label>
+                <input type="text" name="co_previous_employer">
+              </div>
+
+              <div class="field span-6 conditional field-pair" id="prevEmployerTimeCo" style="display:none;">
+                <label data-i18n="pre.timeAtPreviousJob">Time with Previous Employer <span class="req">*</span></label>
+                <div class="pair-inputs">
+                  <input type="number" min="0" name="co_previous_employment_years" data-i18n-placeholder="form.years" placeholder="Years">
+                  <input type="number" min="0" max="11" name="co_previous_employment_months" data-i18n-placeholder="form.months" placeholder="Months">
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-
-        <div class="form-row">
-          <input type="number" name="co_years" id="yearsCo" data-i18n-placeholder="form.years" placeholder="Years">
-          <input type="number" name="co_months" data-i18n-placeholder="form.months" placeholder="Months">
-        </div>
-
-        <input type="text" name="co_previous_address" id="prevAddressCo" data-i18n-placeholder="form.prevAddress" placeholder="Previous Address" style="display:none;">
-
-        <div id="prevAddressTimeCo" class="form-row" style="display:none;">
-          <input type="number" name="co_previous_address_years" data-i18n-placeholder="form.years">
-          <input type="number" name="co_previous_address_months" data-i18n-placeholder="form.months">
-        </div>
-
-        <input type="text" name="co_drivers_license" data-i18n-placeholder="form.license" placeholder="Driver's License">
-        <input type="text" name="co_ssn" data-i18n-placeholder="form.ssn" placeholder="SSN">
-
-        <h3 data-i18n="pre.residential">Residential Status</h3>
-
-        <div class="radio-group">
-          <label>
-            <input type="radio" name="resCo" value="Own">
-            <span class="radio-circle"></span>
-            <span class="radio-text" data-i18n="form.own">Own</span>
-          </label>
-
-          <label>
-            <input type="radio" name="resCo" value="Rent">
-            <span class="radio-circle"></span>
-            <span class="radio-text" data-i18n="form.rent">Rent</span>
-          </label>
-
-          <label>
-            <input type="radio" name="resCo" value="Parents">
-            <span class="radio-circle"></span>
-            <span class="radio-text" data-i18n="form.parents">Parents</span>
-          </label>
-        </div>
-
-        <input type="text" name="co_rent_or_mortgage" data-i18n-placeholder="form.rentMortgage" placeholder="Monthly Rent/Mortgage">
-
-        <h3 data-i18n="pre.employment">Employment</h3>
-
-        <input type="text" name="co_employer" data-i18n-placeholder="form.employer" placeholder="Employer Name">
-        <input type="text" name="co_ocupation" data-i18n-placeholder="form.occupation" placeholder="Occupation">
-        <input type="tel" name="co_employer_phone" data-i18n-placeholder="form.employerPhone" placeholder="Employer Phone">
-        <input type="text" name="co_income" data-i18n-placeholder="form.income" placeholder="Income">
-
-        <div class="form-row">
-          <input type="number" name="co_employment_years" id="empYearsCo" data-i18n-placeholder="form.years" placeholder="Years">
-          <input type="number" name="co_employment_months" data-i18n-placeholder="form.months" placeholder="Months">
-        </div>
-
-        <input type="text" name="co_previous_employer" id="prevEmployerCo" data-i18n-placeholder="form.prevEmployer" placeholder="Previous Employer" style="display:none;">
-        <div id="prevEmployerTimeCo" class="form-row" style="display:none;">
-          <input type="number" name="co_previous_employment_years" data-i18n-placeholder="form.years">
-          <input type="number" name="co_previous_employment_months" data-i18n-placeholder="form.months">
-        </div>
-
       </div>
 
     </div>
 
-    <!-- DISCLAIMER -->
-    <div class="disclaimer">
-      <p data-i18n="pre.disclaimer">
-        I hereby acknowledge, authorize and grant permission that the information contained in this credit application 
-        can and will be submitted on my behalf to financial institutions for the sole purpose of securing financing, 
-        and or credit, for the purchase/lease of a vehicle.
-      </p>
-    </div>
-
-    <!-- SUBMIT -->
-     <!-- E-SIGNATURE -->
+    <!-- SIGNATURES -->
     <div class="signature-section">
-
       <h3 class="signature-title" data-i18n="pre.signature">Applicant Signature</h3>
 
+      <p class="signature-error" id="signatureError" role="alert" data-i18n="pre.signRequired">Please sign in the box above before submitting.</p>
+
       <div class="signature-grid">
-
-        <!-- PRIMARY SIGNATURE -->
         <div class="signature-box">
-          <p data-i18n="pre.primary">Primary Applicant</p>
-          <canvas id="signaturePadPrimary"></canvas>
-          <button type="button" onclick="clearSignature('primary')">Clear</button>
+          <p class="signature-label" data-i18n="pre.primary">Primary Applicant</p>
+          <div class="signature-pad-wrap">
+            <canvas id="signaturePadPrimary"></canvas>
+            <span class="signature-hint" data-i18n="pre.signHint">Sign here</span>
+          </div>
+          <button type="button" class="signature-clear" onclick="clearSignature('primary')" data-i18n="pre.clear">Clear</button>
         </div>
 
-        <!-- CO SIGNATURE -->
-        <div class="signature-box">
-          <p data-i18n="pre.co">Co-Applicant</p>
-          <canvas id="signaturePadCo"></canvas>
-          <button type="button" onclick="clearSignature('co')">Clear</button>
+        <div class="signature-box co-applicant co-applicant-hidden">
+          <p class="signature-label" data-i18n="pre.co">Co-Applicant</p>
+          <div class="signature-pad-wrap">
+            <canvas id="signaturePadCo"></canvas>
+            <span class="signature-hint" data-i18n="pre.signHint">Sign here</span>
+          </div>
+          <button type="button" class="signature-clear" onclick="clearSignature('co')" data-i18n="pre.clear">Clear</button>
         </div>
-
       </div>
-
     </div>
 
+    <!-- ACKNOWLEDGEMENT -->
+    <label class="ack">
+      <input type="checkbox" name="acknowledgement" value="Agreed" required>
+      <span class="ack-box"><i class="bi bi-check"></i></span>
+      <span class="ack-text" data-i18n="pre.disclaimer">I hereby acknowledge, authorize and grant permission that the information contained in this credit application can and will be submitted on my behalf to financial institutions for the sole purpose of securing financing, and or credit, for the purchase/lease of a vehicle.</span>
+    </label>
 
-    <!-- <button class="submit-btn">Submit Application</button> -->
-    <button type="submit" class="submit-btn" data-i18n="pre.submit">
-        Submit & Continue to Payment
-    </button>
+    <!-- SUBMIT -->
+    <div class="submit-bar">
+      <button type="submit" class="submit-btn" data-i18n="pre.submit">Submit & Continue to Payment</button>
+      <p class="submit-note" data-i18n="pre.submitNote">Submitting does not affect your credit score.</p>
+    </div>
 
   </form>
 
@@ -274,16 +483,44 @@
 <!-- END APPLICATION SECTION -->
 
 
+<!-- TRUST BAR -->
+<section class="trust-bar">
+  <div class="trust-inner">
+
+    <div class="trust-item">
+      <i class="bi bi-award"></i>
+      <span data-i18n="trust.exp">Best Deal Guaranteed, Everytime</span>
+    </div>
+
+    <div class="trust-item">
+      <i class="bi bi-person-check"></i>
+      <span data-i18n="trust.credit">All Credit Types Welcome</span>
+    </div>
+
+    <div class="trust-item">
+      <i class="bi bi-clock-history"></i>
+      <span data-i18n="trust.delivery">12+ Client Hours Saved</span>
+    </div>
+
+    <div class="trust-item">
+      <i class="bi bi-house-check"></i>
+      <span data-i18n="trust.fees">0 Dealership Visits</span>
+    </div>
+
+  </div>
+</section>
+<!-- END TRUST BAR -->
+
 <!-- FOOTER -->
 <footer class="footer">
 
   <div class="footer-container">
 
-    <!-- LEFT: BRAND -->
-    <div class="footer-col">
+    <!-- BRAND -->
+    <div class="footer-col footer-brand">
+      <a href="index.html" class="footer-logo"><img src="logo.webp" alt="United Automotive Consultants" width="180" height="60"></a>
       <p data-i18n="footer.copyright">© 2026 United Automotive Consultants.</p>
       <p data-i18n="footer.rights">All rights reserved.</p>
-      <p data-i18n="footer.crafted"><strong>Crafted by Kermit Webcraft.</strong></p>
     </div>
 
     <!-- BUSINESS HOURS -->
@@ -294,15 +531,6 @@
       <p data-i18n="footer.hours3">Sun: 9am - 8pm</p>
     </div>
 
-    <!-- CONTACT INFO -->
-    <div class="footer-col">
-      <h4 data-i18n="footer.contact">Contact Us</h4>
-
-      <p><i class="bi bi-telephone"></i> (732) 685-2948</p>
-      <p><i class="bi bi-envelope"></i> jmartinez@uacnj.com</p>
-      <p><i class="bi bi-geo-alt"></i> NJ, NY, & PA</p>
-    </div>
-
     <!-- LEGAL LINKS -->
     <div class="footer-col">
       <h4 data-i18n="footer.legal">Legal</h4>
@@ -311,10 +539,31 @@
       <p><a href="accessibilitystmt.html" data-i18n="footer.accessibility">Accessibility Statement</a></p>
     </div>
 
+    <!-- CONTACT INFO -->
+    <div class="footer-col">
+      <h4 data-i18n="footer.contact">Contact Us</h4>
+      <p><a href="tel:+17326852948"><i class="bi bi-telephone"></i> (732) 685-2948</a></p>
+      <p><a href="mailto:jmartinez@uacnj.com"><i class="bi bi-envelope"></i> jmartinez@uacnj.com</a></p>
+      <p><i class="bi bi-geo-alt"></i> NJ, NY, & PA</p>
+    </div>
+
   </div>
+
+  <nav class="footer-nav">
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="about.html" data-i18n="nav.about">About</a>
+    <a href="getpreapproved.html" data-i18n="nav.preapproved">Get Pre-Approved</a>
+    <a href="insurance.html" data-i18n="nav.insurance">Insurance</a>
+    <a href="contactus.html" data-i18n="nav.contact">Contact</a>
+  </nav>
+
+  <div class="footer-bottom">
+    <a class="crafted-link" href="https://kermitwebcraft.com/" target="_blank" rel="noopener" data-i18n="footer.crafted"><strong>Crafted by Kermit Webcraft.</strong></a>
+  </div>
+
 </footer>
 
-<script src="script.js"></script>
+<script defer src="script.js"></script>
 <script src="https://formslist.com/widget.js" data-form="-OS6jTyqwZ3x" data-color="#007BFF" data-fields="name,email,tel,message" data-labels="Name,Email,Phone Number,Message"></script>
 </body>
 </html>
